@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/compiler/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--INICIO NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-gradient-light">
+    <div class="container">
+      <a class="navbar-brand h1 mb-0" href="#">Curso</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Cities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Landmarks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Travelling</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Learning</a></li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="dropTeste">Services</a>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">US Embassy</a>
+              <a class="dropdown-item" href="#">Megabus</a>
+              <a class="dropdown-item" href="#">US Embassy</a>
+            </div>
+
+          </li>
+        </ul>
+
+        <form class="form-inline">
+          <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar">
+          <button class="btn btn-dark" type="submit">OK</button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <!--FIM NAVBAR-->
+
+ <!--INICIO CAROUSEL-->
+  <div class="carousel slide" data-ride="carousel" id="BannerRot">
+
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#BannerRot" data-slide-to="0"></li>
+      <li class="" data-target="#BannerRot" data-slide-to="1"></li>
+      <li class="" data-target="#BannerRot" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img-fluid d-block" src="img/ny.jpg">
+        <div class="carousel-caption d-none d-sm-block">
+          <h2>New York</h2>
+          <p class="lead">Conheça mais sobre a cidade que nunca dorme.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid d-block" src="img/sf.jpg">
+        <div class="carousel-caption d-none d-sm-block">
+          <h2>San Francisco</h2>
+          <p class="lead">Se você estiver vindo pra SF, não se esqueça de colocar uma flor em seu cabelo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid d-block" src="img/bstn.jpg">
+        <div class="carousel-caption d-none d-sm-block">
+          <h2>Boston</h2>
+          <p class="lead">Quer imigrar? Partiu Massachussets!</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#BannerRot" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+
+    <a class="carousel-control-next" href="#BannerRot" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+<!--FIM CAROULSEL-->
+
+<!--INICIO SCROLLSPY-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center my-4">
+        <h1 class="display-3">Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      </div>
+    </div>
+
+    <div class="row border-bottom">
+      <div class="col-12">
+        <nav class="navbar navbar-dark" id="menuVert">
+          <ul class="nav nav-tabs">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown">Visas</a>
+
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#item1-1">Non Immigrant VIsa</a>
+                <a class="dropdown-item" href="#item1-2">Immigrant Visa</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#item2">Fronteiras</a>
+            </li>
+
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown">Outros</a>
+
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#item3-1">Estudante</a>
+                <a class="dropdown-item" href="#item3-2">Habilidades Especiais</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="row mt-3 border-bottom mb-5">
+      <div class="col-12">
+        <div class="ScrollSpySite" data-spy="scroll" data-target="#menuVert" data-offset="0">
+          <h4 id="item1">Visas</h4>
+          <p>A Embaixada e Consulados dos Estados Unidos no Brasil suspenderam os serviços de solicitação de
+            vistos de não imigrante, mas estão processando as solicitações de vistos de estudante, bem como
+            as solicitações isentas da Proclamação Presidencial 10143, e que se qualificam para uma
+            autorização de embarque conhecida como National Interest Exception (NIE). Para agendar uma
+            entrevista para obter o visto de estudante, acesse o site de agendamento.
+            Para obter informações sobre vistos de imigrante, visite este site.</p>
+
+          <h5 id="item1-1">Non Immigrant Visas</h5>
+          <p>Vistos de não imigrante são necessários para viagens temporárias aos Estados Unidos que incluem
+            turismo, trabalho temporário, estudo e intercâmbio.<br>
+            Todos os brasileiros necessitam de um visto para visitar os Estados Unidos, incluindo passageiros
+            em trânsito fazendo uma conexão internacional. Turistas com dupla cidadania podem ser elegíveis,
+            no entanto, a entrar sem um visto sob o  Electronic System for Travel Authorization(ESTA) usando
+            o seu passaporte da outra nacionalidade.</p>
+          <h5 id="item1-2">Immigrant Visas</h5>
+          <p>Os vistos de imigrantes para os Estados Unidos são processados para os cidadãos brasileiros e
+            residentes no Brasil no Consulado Geral dos EUA no Rio de Janeiro.<br>
+            Para solicitar um visto de imigrante, um cidadão estrangeiro que quer imigrar geralmente precisa
+            ser patrocinado por um parente imediato que seja cidadão dos EUA ou residente legal permanente ou
+            um promitente empregador dos EUA e ter um petição aprovada antes de solicitar um visto de imigrante.
+            O patrocinador inicia o processo ao protocolar uma petição em nome do cidadão estrangeiro junto ao
+            Serviço de Cidadania e Imigração dos EUA (USCIS). Veja a nossa Lista de Categorias de Vistos para
+            saber mais sobre os diferentes tipos de vistos de imigrantes para os Estados Unidos, incluindo o
+            Programa de Vistos de Diversidade.</p>
+
+          <h4 id="item2">Fronteiras</h4>
+          <p>Não recomendamos a aquisição de serviços clandestinos que permitam a entrada de viajantes pela fronteira
+            terrestre do país</p>
+
+          <h4 id="item3">Outros tipos de visto</h4>
+          <p>Veja abaixo as demais categorias</p>
+
+          <h5 id="item3-1">Estudante</h5>
+          <p>Uma vez que o USCIS aprove sua petição e que você tenha concluído o pré-processamento junto
+            ao National Visa Center (NVC) ou que você tenha sido selecionado pela Loteria de Vistos de
+            Diversidade e tenha concluído o processamento no Centro Consular no Kentucky (KCC), revise
+            as instruções dadas pelo NVC ou pelo KCC, além das informações apresentadas neste site para
+            mais instruções. Além disso, visite as páginas: Immigrant Visa Process; Diversity Visa Process
+            ou as categorias de visto abaixo para iniciar sua solicitação de visto de imigrante.</p>
+          <h5 id="item3-2">Habilidades Especiais</h5>
+          <p>SOMENTE para o Consulado Geral do Rio de Janeiro: Até novas instruções, em dias de chuva,
+            solicitantes de visto ou de outros serviços consulares poderão entrar nas salas de espera do
+            Consulado com um guarda-chuva pequeno, compacto, dobrável e sem pontas afiadas. Guarda-chuvas
+            maiores não serão permitidos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FIM NAVBAR-->
+
+
+  <!--INICIO CARDS-->
+  <div class="contaner">
+<div class="row mb-5">
+  <div class="col-4">
+    <div class="card">
+      <img class="card-img-top" src="img/news.jpg">
+      <div class="card-body">
+        <h4 class="card-title">Card1</h4>
+        <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
+        <p class="card-text">Use border utilities to quickly style the border and border-radius of an element. 
+        Great for images, buttons, or any other element.</p>
+        </div>
+        <div class="card-body":>
+        <a href="#" class="card-link">Overview</a>
+        <a href="#" class="card-link">See More</a>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  <div class="col-4">
+    <div class="card">
+      <img class="card-img-top" src="img/lands.jpg">
+      <div class="card-body">
+        <h4 class="card-title">Card2</h4>
+        <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
+        <p class="card-text">Use border utilities to quickly style the border and border-radius of an element. 
+        Great for images, buttons, or any other element.</p>
+        <hr>
+        <a href="#" class="card-link">Overview</a>
+        <a href="#" class="card-link">See More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="card">
+      <img class="card-img-top" src="img/cities.jpg">
+      <div class="card-body">        
+        <h4 class="card-title">Card3</h4>
+        <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
+        <p class="card-text">Use border utilities to quickly style the border and border-radius of an element. 
+        Great for images, buttons, or any other element.</p>
+        <hr>
+        <a href="#" class="card-link">Overview</a>
+        <a href="#" class="card-link">See More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>
