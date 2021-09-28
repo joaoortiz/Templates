@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="node_modules/bootstrap/compiler/bootstrap.css" rel="stylesheet">
-  <link href="node_modules/bootstrap/compiler/style.css" rel="stylesheet">
+  <link href="node_modules/font-awesome/compiler/font-awesome.css" rel="stylesheet">
+  <link href="style/compiler/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,7 +50,7 @@
   </nav>
   <!--FIM NAVBAR-->
 
- <!--INICIO CAROUSEL-->
+  <!--INICIO CAROUSEL-->
   <div class="carousel slide" data-ride="carousel" id="BannerRot">
 
     <ol class="carousel-indicators">
@@ -92,159 +93,422 @@
       <span class="sr-only">Próximo</span>
     </a>
   </div>
-<!--FIM CAROULSEL-->
+  <!--FIM CAROULSEL-->
 
-<!--INICIO SCROLLSPY-->
+
   <div class="container">
-    <div class="row">
+    <div class="row mb-2">
       <div class="col-12 text-center my-4">
-        <h1 class="display-3">Lorem Ipsum</h1>
+        <h1 class="display-4"><i class="fa fa-cogs" aria-hidden="true"></i> Lorem Ipsum</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
     </div>
 
-    <div class="row border-bottom">
-      <div class="col-12">
-        <nav class="navbar navbar-dark" id="menuVert">
-          <ul class="nav nav-tabs">
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown">Visas</a>
-
-
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#item1-1">Non Immigrant VIsa</a>
-                <a class="dropdown-item" href="#item1-2">Immigrant Visa</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#item2">Fronteiras</a>
-            </li>
-
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown">Outros</a>
-
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#item3-1">Estudante</a>
-                <a class="dropdown-item" href="#item3-2">Habilidades Especiais</a>
-              </div>
-            </li>
-          </ul>
+    <div class="row">
+      <div class="col-3">
+        <nav class="navbar navbar-light bg-light " id="menuVert">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link active" href="#item1">COVID-19</a>
+            <a class="nav-link mt-2" href="#item2">Non Immigrant Visas</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3" href="#item2-1">B-1 Visa</a>
+              <a class="nav-link ml-3" href="#item2-2">J-1 Visa</a>
+              <a class="nav-link ml-3" href="#item2-3">M-1 Visa</a>
+            </nav>
+            <a class="nav-link mt-2" href="#item3">Immigrant Visas</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3" href="#item3-1">H-1 Visa</a>
+              <a class="nav-link ml-3" href="#item3-2">K-1 Visa</a>
+              <a class="nav-link ml-3" href="#item3-3">R-1 Visa</a>
+            </nav>
+          </nav>
         </nav>
       </div>
-    </div>
-    <div class="row mt-3 border-bottom mb-5">
-      <div class="col-12">
-        <div class="ScrollSpySite" data-spy="scroll" data-target="#menuVert" data-offset="0">
-          <h4 id="item1">Visas</h4>
-          <p>A Embaixada e Consulados dos Estados Unidos no Brasil suspenderam os serviços de solicitação de
-            vistos de não imigrante, mas estão processando as solicitações de vistos de estudante, bem como
-            as solicitações isentas da Proclamação Presidencial 10143, e que se qualificam para uma
-            autorização de embarque conhecida como National Interest Exception (NIE). Para agendar uma
-            entrevista para obter o visto de estudante, acesse o site de agendamento.
-            Para obter informações sobre vistos de imigrante, visite este site.</p>
 
-          <h5 id="item1-1">Non Immigrant Visas</h5>
-          <p>Vistos de não imigrante são necessários para viagens temporárias aos Estados Unidos que incluem
-            turismo, trabalho temporário, estudo e intercâmbio.<br>
-            Todos os brasileiros necessitam de um visto para visitar os Estados Unidos, incluindo passageiros
-            em trânsito fazendo uma conexão internacional. Turistas com dupla cidadania podem ser elegíveis,
-            no entanto, a entrar sem um visto sob o  Electronic System for Travel Authorization(ESTA) usando
-            o seu passaporte da outra nacionalidade.</p>
-          <h5 id="item1-2">Immigrant Visas</h5>
-          <p>Os vistos de imigrantes para os Estados Unidos são processados para os cidadãos brasileiros e
-            residentes no Brasil no Consulado Geral dos EUA no Rio de Janeiro.<br>
-            Para solicitar um visto de imigrante, um cidadão estrangeiro que quer imigrar geralmente precisa
-            ser patrocinado por um parente imediato que seja cidadão dos EUA ou residente legal permanente ou
-            um promitente empregador dos EUA e ter um petição aprovada antes de solicitar um visto de imigrante.
-            O patrocinador inicia o processo ao protocolar uma petição em nome do cidadão estrangeiro junto ao
-            Serviço de Cidadania e Imigração dos EUA (USCIS). Veja a nossa Lista de Categorias de Vistos para
-            saber mais sobre os diferentes tipos de vistos de imigrantes para os Estados Unidos, incluindo o
-            Programa de Vistos de Diversidade.</p>
+      <div class="col-9">
+        <div data-spy="scroll" data-target="#menuVert" data-offset="0" class="ScrollSpySite">
+          <h5 id="item1">COVID-19</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
+            tempus libero et ultricies. Morbi posuere ipsum sed fermentum ullamcorper.
+            Cras eleifend condimentum ex, ut aliquam elit vestibulum sed. Phasellus dictum
+            in lectus vel interdum. Aliquam a sem vitae purus pretium accumsan a congue lorem.
+            Vestibulum consectetur neque vel ex hendrerit porta. Vestibulum eget blandit nibh.
+            Nulla tincidunt, est vel auctor malesuada, neque lectus gravida sem, ut convallis
+            mi nibh ut erat. Sed gravida maximus hendrerit. Duis bibendum rhoncus dui ac egestas.
+            Pellentesque pretium congue nibh sed vestibulum.</p>
 
-          <h4 id="item2">Fronteiras</h4>
-          <p>Não recomendamos a aquisição de serviços clandestinos que permitam a entrada de viajantes pela fronteira
-            terrestre do país</p>
+          <h5 id="item2">Non-Immigrant Visas</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
+            tempus libero et ultricies. Morbi posuere ipsum sed fermentum ullamcorper.
+            Cras eleifend condimentum ex, ut aliquam elit vestibulum sed. Phasellus dictum
+            in lectus vel interdum. Aliquam a sem vitae purus pretium accumsan a congue lorem.
+            Vestibulum consectetur neque vel ex hendrerit porta. Vestibulum eget blandit nibh.
+            Nulla tincidunt, est vel auctor malesuada, neque lectus gravida sem, ut convallis
+            mi nibh ut erat. Sed gravida maximus hendrerit. Duis bibendum rhoncus dui ac egestas.
+            Pellentesque pretium congue nibh sed vestibulum.</p>
 
-          <h4 id="item3">Outros tipos de visto</h4>
-          <p>Veja abaixo as demais categorias</p>
+          <h6 id="item2-1">B-1 Visa</h6>
+          <p>Nesse caso, para quem vai viajar para os EUA com o intuito de visitar e solicita os
+            vistos B1 e B2, é possível realizar apenas estudos informais recreativos.
+            Na concepção do Departamento de Estado dos Estados Unidos, “estudo recreativo”
+            é aquele que não concede diploma, que não possui carga horária superior a 18 horas
+            semanais e não ultrapassa o período de 3 meses.
+            Por isso, no momento da entrevista é importante que você deixe claro o seu
+            motivo de viagem primário como sendo o Turismo e o objetivo secundário como sendo o Estudo.
+            Assim, caso solicitado, apresentar os documentos que comprovem.
+            Fora isso, os vistos B1 e B2 são, normalmente, voltados para Negócios e Turismo, respectivamente.</p>
 
-          <h5 id="item3-1">Estudante</h5>
-          <p>Uma vez que o USCIS aprove sua petição e que você tenha concluído o pré-processamento junto
-            ao National Visa Center (NVC) ou que você tenha sido selecionado pela Loteria de Vistos de
-            Diversidade e tenha concluído o processamento no Centro Consular no Kentucky (KCC), revise
-            as instruções dadas pelo NVC ou pelo KCC, além das informações apresentadas neste site para
-            mais instruções. Além disso, visite as páginas: Immigrant Visa Process; Diversity Visa Process
-            ou as categorias de visto abaixo para iniciar sua solicitação de visto de imigrante.</p>
-          <h5 id="item3-2">Habilidades Especiais</h5>
-          <p>SOMENTE para o Consulado Geral do Rio de Janeiro: Até novas instruções, em dias de chuva,
-            solicitantes de visto ou de outros serviços consulares poderão entrar nas salas de espera do
-            Consulado com um guarda-chuva pequeno, compacto, dobrável e sem pontas afiadas. Guarda-chuvas
-            maiores não serão permitidos.</p>
+          <h6 id="item2-2">J-1 Visa</h6>
+          <p>Esse visto é indicado para os intercambistas que desejam viajar para estudar nos EUA. Nessa classificação,
+            o estudo é permitido de acordo com o curso especificado na carta oficial (I-20 ou DS-2019) ao longo da
+            duração do programa de intercâmbio.
+            Na hora da entrevista você precisa estar com o documento I-20 ou DS-2019 original em mãos para estar apto
+            para o requerimento do visto de Estudo.
+            O participante só poderá estudar legalmente nos Estados Unidos durante o período em que o mesmo estiver
+            matriculado. Além de seguir todos os regulamentos do visto e da própria instituição acadêmica.
+            Assim, o visto americano J1 é destinado para programas de intercâmbio ou treinamento e o visto F1 é indicado
+            para estudantes, sendo possível, em determinados cursos, angariar um visto para trabalhar nos EUA,
+            temporariamente.</p>
+
+          <h6 id="item2-3">M-1 Visa</h6>
+          <p>Para solicitar um visto de trabalho EUA, se você tem o intuito de trabalhar no país, você precisa estar
+            dentro de um programa
+            de trabalho (Work Experience ou AuPair).
+            O primeiro é dedicado a estudantes universitários, matriculados e com nível intermediário de inglês. Já o
+            segundo é focado
+            em candidatas do sexo feminino, que tenham fluência no idioma, disponibilidade de no mínimo 12 meses e que
+            queiram ser babá.
+            Na hora da entrevista você precisa estar com o documento DS-2019 original em mãos para estar apto para o
+            requerimento do visto de Trabalho e Job Offer assinada pelo empregador e empregado (se fornecido pelo
+            programa
+            escolhido).
+            Nesse sentido, o tempo de permanência do participante no país depende das condições do programa em que ele
+            está inserido.
+            Mas, esse visto de trabalho americano é concedido dentro das modalidades citadas acima, disponíveis na IE.
+          </p>
+
+          <h5 id="item3">Immigrant Visas</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
+            tempus libero et ultricies. Morbi posuere ipsum sed fermentum ullamcorper.
+            Cras eleifend condimentum ex, ut aliquam elit vestibulum sed. Phasellus dictum
+            in lectus vel interdum. Aliquam a sem vitae purus pretium accumsan a congue lorem.
+            Vestibulum consectetur neque vel ex hendrerit porta. Vestibulum eget blandit nibh.
+            Nulla tincidunt, est vel auctor malesuada, neque lectus gravida sem, ut convallis
+            mi nibh ut erat. Sed gravida maximus hendrerit. Duis bibendum rhoncus dui ac egestas.
+            Pellentesque pretium congue nibh sed vestibulum.</p>
+
+          <h6 id="item3-1">H-1 Visa</h6>
+          <p>Nesse caso, para quem vai viajar para os EUA com o intuito de visitar e solicita os
+            vistos B1 e B2, é possível realizar apenas estudos informais recreativos.
+            Na concepção do Departamento de Estado dos Estados Unidos, “estudo recreativo”
+            é aquele que não concede diploma, que não possui carga horária superior a 18 horas
+            semanais e não ultrapassa o período de 3 meses.
+            Por isso, no momento da entrevista é importante que você deixe claro o seu
+            motivo de viagem primário como sendo o Turismo e o objetivo secundário como sendo o Estudo.
+            Assim, caso solicitado, apresentar os documentos que comprovem.
+            Fora isso, os vistos B1 e B2 são, normalmente, voltados para Negócios e Turismo, respectivamente.</p>
+
+          <h6 id="item3-2">K-1 Visa</h6>
+          <p>Esse visto é indicado para os intercambistas que desejam viajar para estudar nos EUA. Nessa classificação,
+            o estudo é permitido de acordo com o curso especificado na carta oficial (I-20 ou DS-2019) ao longo da
+            duração do programa de intercâmbio.
+            Na hora da entrevista você precisa estar com o documento I-20 ou DS-2019 original em mãos para estar apto
+            para o requerimento do visto de Estudo.
+            O participante só poderá estudar legalmente nos Estados Unidos durante o período em que o mesmo estiver
+            matriculado. Além de seguir todos os regulamentos do visto e da própria instituição acadêmica.
+            Assim, o visto americano J1 é destinado para programas de intercâmbio ou treinamento e o visto F1 é indicado
+            para estudantes, sendo possível, em determinados cursos, angariar um visto para trabalhar nos EUA,
+            temporariamente.</p>
         </div>
       </div>
     </div>
   </div>
-  <!--FIM NAVBAR-->
 
 
   <!--INICIO CARDS-->
-  <div class="contaner">
-<div class="row mb-5">
-  <div class="col-4">
-    <div class="card">
-      <img class="card-img-top" src="img/news.jpg">
-      <div class="card-body">
-        <h4 class="card-title">Card1</h4>
-        <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
-        <p class="card-text">Use border utilities to quickly style the border and border-radius of an element. 
-        Great for images, buttons, or any other element.</p>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-sm-6 col-md-4">
+        <div class="card mb-5">
+          <img class="card-img-top" src="img/news.jpg">
+          <div class="card-body">
+            <h4 class="card-title">Card1</h4>
+            <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
+            <p class="card-text">Use border utilities to quickly style the border and border-radius of an element.
+              Great for images, buttons, or any other element.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Politics</li>
+            <li class="list-group-item">Health</li>
+            <li class="list-group-item">World</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link" data-toggle="modal" data-target="#divModal">Overview</a>
+            <a href="#" class="card-link">See More</a>
+          </div>
         </div>
-        <div class="card-body":>
-        <a href="#" class="card-link">Overview</a>
-        <a href="#" class="card-link">See More</a>
+
       </div>
-      
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card mb-5">
+          <img class="card-img-top" src="img/lands.jpg">
+          <div class="card-body">
+            <h4 class="card-title">Card2</h4>
+            <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
+            <p class="card-text">Use border utilities to quickly style the border and border-radius of an element.
+              Great for images, buttons, or any other element.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Politics</li>
+            <li class="list-group-item">Health</li>
+            <li class="list-group-item">World</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Overview</a>
+            <a href="#" class="card-link">See More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <div class="card mb-5">
+          <img class="card-img-top" src="img/cities.jpg">
+          <div class="card-body">
+            <h4 class="card-title">Card3</h4>
+            <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
+            <p class="card-text">Use border utilities to quickly style the border and border-radius of an element.
+              Great for images, buttons, or any other element.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Politics</li>
+            <li class="list-group-item">Health</li>
+            <li class="list-group-item">World</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Overview</a>
+            <a href="#" class="card-link">See More</a>
+          </div>
+        </div>
+      </div>
     </div>
-    
   </div>
 
-  <div class="col-4">
-    <div class="card">
-      <img class="card-img-top" src="img/lands.jpg">
-      <div class="card-body">
-        <h4 class="card-title">Card2</h4>
-        <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
-        <p class="card-text">Use border utilities to quickly style the border and border-radius of an element. 
-        Great for images, buttons, or any other element.</p>
-        <hr>
-        <a href="#" class="card-link">Overview</a>
-        <a href="#" class="card-link">See More</a>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-4"><i class="fa fa-video-camera" aria-hidden="true"></i> Companhias Aéreas</h1>
+          <p class="lead">Saiba mais sobre quais companhias percorrem o território americano.</p>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-pills justify-content-center mb-4" id="PillsNav" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="PillsNav01" data-toggle="pill" href="#navItem01">TEste1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="PillsNav02" data-toggle="pill" href="#navItem02">TEste2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="PillsNav03" data-toggle="pill" href="#navItem03">TEste3</a>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="NavContent">
+            <div class="tab-pane fade show active" id="navItem01" role="tab-panel">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TzrzconeFjM"></iframe>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h4>Boston</h4>
+                  <p>
+                    Boston is the capital and most populous city of the Commonwealth of Massachusetts in the United
+                    States and the 21st most populous city in the United States.
+                    Drone Profs™ is a premium niche video brand specializing in Drone Footage and 4K video to bring you
+                    the most beautiful aerial view of cities around the world.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="navItem02" role="tab-panel">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hanE_bysWro"></iframe>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h4>San Francisco</h4>
+                  <p>
+                    Boston is the capital and most populous city of the Commonwealth of Massachusetts in the United
+                    States and the 21st most populous city in the United States.
+                    Drone Profs™ is a premium niche video brand specializing in Drone Footage and 4K video to bring you
+                    the most beautiful aerial view of cities around the world.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="navItem03" role="tab-panel">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VOM__NZAFQM"></iframe>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <h4>Los Angeles</h4>
+                  <p>
+                    Boston is the capital and most populous city of the Commonwealth of Massachusetts in the United
+                    States and the 21st most populous city in the United States.
+                    Drone Profs™ is a premium niche video brand specializing in Drone Footage and 4K video to bring you
+                    the most beautiful aerial view of cities around the world.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
-  <div class="col-4">
-    <div class="card">
-      <img class="card-img-top" src="img/cities.jpg">
-      <div class="card-body">        
-        <h4 class="card-title">Card3</h4>
-        <h6 class="card-subtitle text-muted mb-2">Exemplo</h6>
-        <p class="card-text">Use border utilities to quickly style the border and border-radius of an element. 
-        Great for images, buttons, or any other element.</p>
-        <hr>
-        <a href="#" class="card-link">Overview</a>
-        <a href="#" class="card-link">See More</a>
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-12 text-center">
+        <h1 class="display-4"><i class="fa fa-envelope"></i> Formulário de Contato</h1>
       </div>
     </div>
-  </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-sm-12 col-md-10 col-lg-8">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-5 col-sm-12">
+              <label for="inputNome">Nome</label>
+              <input class="form-control" name="inputNome" type="text">
+            </div>
+            <div class="form-group col-md-5 col-sm-12">
+              <label for="inputSNome">Sobrenome</label>
+              <input class="form-control" name="inputSNome" type="text">
+            </div>
+            <div class="form-group col-md-2 col-sm-12">
+              <label for="inputSexo">Sexo</label>
+              <select name="inputSexo" class="form-control">
+                <option value="M">Masculino</option>
+                <option value="M">Feminino</option>
+              </select>
+
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-sm-12">
+              <label for="inputEnd">Endereço</label>
+              <input class="form-control" name="inputEnd">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-sm-12">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox">Desejo receber novidades por e-mail.
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-sm-12">
+              <button type="submit" class="btn btn-danger float-right" tab-index="0" role="button" data-toggle="popover"
+                data-placement="left" data-trigger="hover" data-content="CLique aqui para entrar em contato."
+                title="Ajuda">
+                Enviar E-mail
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 </div>
+<div class="container-fluid">
+    <div class="row bg-light">      
+      <div class="col-sm-4 mt-3">
+        <h3>Curso</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum arcu et iaculis aliquam.
+          Vestibulum et accumsan arcu. Pellentesque hendrerit fringilla quam a efficitur.</p>
+        <p>Pellentesque facilisis non neque eu sollicitudin. In sed libero ligula. Sed rhoncus vulputate molestie.
+          Vestibulum maximus justo non dui mollis aliquam.</p>
+      </div>
+      <div class="col-sm-4 mt-3">
+        <h3>Menu</h3>
+        <div class="list-group text-center">
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="">Cities</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="">Landmarks</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="">Travelling</a>
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="">Learning</a>
+        </div>
+      </div>
+      <div class="col-sm-4 mt-3">
+        <h3>Social</h3>
+        <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+          <a class="btn btn-primary text-white"><i class="fa fa-facebook"></i> Facebook</a>
+          <a class="btn btn-primary text-white"><i class="fa fa-instagram"></i> Instagram</a>
+          <a class="btn btn-primary text-white"><i class="fa fa-linkedin"></i> Linkedin</a>
+          <a class="btn btn-primary text-white"><i class="fa fa-twitter"></i> Twitter</a>
+        </div>
+      </div>
 
-</div>
+      <div class="col-sm-12">
+        <hr>
+        <blockquote class="blockquote text-center mt-3">
+          <p class="mb-0">O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido
+            em seu trabalho.</p>
+          <footer class="blockquote-footer">Biz Stone<cite title="Título">Fundador do Twitter</cite></footer>
+        </blockquote>
+      </div>
 
+    </div>
+  </div>
+  <!--MODAL-->
+  <div class="modal fade" id="divModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">News</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Alternatively, travelers to the U.S. may provide documentation
+            from a licensed health care provider of having recovered from COVID-19
+            in the 90 days preceding travel. All passengers must also present a signed
+            attestation form documenting their testing status; click here for the
+            attestation form and instructions.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <script>
+    $(function () {
+
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
 
 </body>
 
