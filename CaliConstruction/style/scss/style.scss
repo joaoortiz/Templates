@@ -1,0 +1,88 @@
+.ScrollSpySite{
+    position:relative;
+    overflow:auto;
+    height: 390px;
+}
+
+.texto-menu{
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.texto-menu:hover{
+    color: #fd6914;    
+}
+
+.texto-topo-destaque{
+    font-size: 14px;
+}
+
+.texto-topo{
+    font-size: 12px;
+}
+
+.box-seta{
+    width:40%;
+    border-color:#fd6914;
+    border-width: 2px;
+    border-style: solid;        
+    box-shadow: inset 0 0 0 0 #fd6914;
+	transform-origin: right;
+	transition: all ease 0.8s;
+}
+
+  .box-seta:hover {
+    box-shadow: inset 100px 0 0 0 #fd6914;
+    color: #fff;
+  }
+
+  .carousel-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+  }
+
+  .carousel-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+  }
+
+  .borda-imagem-top{
+      position:absolute;
+      top:-20px;
+      left:-5px;
+      z-index:-1;
+      background-color: #fd6914;    
+      width:250px;
+      height:250px;
+  }
+
+  .descricao-imagem-bottom{
+    position:absolute;
+    top:300px;
+    left:105px;
+    z-index:1;
+    background-color: #fd6914;    
+    width:340px;
+    height:90px;
+  }
+
+  .img-banner{
+    width:100%;
+    object-fit: contain;
+  }
+
+  .img-grow{
+    object-fit: fill;
+    transition: transform 0.5s;
+  }
+
+
+  .img-grow:hover{
+    transform: scale(1.2);
+  }
+
+  .div-categories{
+    background: url('http://slidesigma.com/themes/html/cali-constructions/assets/images/bg1.jpg');
+  }
+
+  
