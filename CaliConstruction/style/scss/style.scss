@@ -1,88 +1,556 @@
-.ScrollSpySite{
-    position:relative;
-    overflow:auto;
-    height: 390px;
+body {
 }
 
-.texto-menu{
-    font-size: 14px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+.title-slide {
+  font-family: "Oswald", sans-serif;
 }
 
-.texto-menu:hover{
-    color: #fd6914;    
+.ScrollSpySite {
+  position: relative;
+  overflow: auto;
+  height: 390px;
 }
 
-.texto-topo-destaque{
-    font-size: 14px;
+.texto-menu {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
 }
 
-.texto-topo{
-    font-size: 12px;
+.texto-menu:hover {
+  color: orangered;
 }
 
-.box-seta{
-    width:40%;
-    border-color:#fd6914;
-    border-width: 2px;
-    border-style: solid;        
-    box-shadow: inset 0 0 0 0 #fd6914;
-	transform-origin: right;
-	transition: all ease 0.8s;
+.texto-topo-destaque {
+  font-size: 14px;
 }
 
-  .box-seta:hover {
-    box-shadow: inset 100px 0 0 0 #fd6914;
-    color: #fff;
+.texto-topo {
+  font-size: 12px;
+}
+
+.box-seta {
+  width: 50%;
+  border-color: orangered;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: inset 0 0 0 0 orangered;
+  transform-origin: right;
+  transition: all ease 0.8s;
+}
+
+.box-seta:hover {
+  box-shadow: inset 16.5rem 0 0 0 orangered;
+  color: #fff;
+}
+
+.LinkPill {
+  color: orangered;
+  width: 100%;
+}
+
+.linetime {
+  position: relative;
+  top: 22px;
+  left: 100px;
+  z-index: 0;
+  height: 1px;
+  width: 900px;
+  background-color: orangered;
+}
+
+.LinkPill:hover {
+  color: #ffffff;
+}
+
+.carousel-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+}
+
+.carousel-text {
+  font-family: "Francois One", sans-serif;
+  font-size: 16pt;
+}
+
+.title-little {
+  font-family: "Oswald", sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.title-medium {
+  font-family: "Oswald", sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.title-big {
+  font-family: "Oswald", sans-serif;
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+.borda-imagem-top {
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  z-index: -1;
+  background-color: orangered;
+  width: 250px;
+  height: 250px;
+}
+
+.descricao-imagem-bottom {
+  position: absolute;
+  top: 300px;
+  left: 105px;
+  z-index: 1;
+  background-color: orangered;
+  width: 340px;
+  height: 90px;
+}
+
+.img-banner {
+  width: 100%;
+  object-fit: contain;
+}
+
+.img-grow {
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.img-grow:hover {
+  transform: scale(1.2);
+}
+
+.div-categories {
+  background: url("../../img/bg1.jpg");
+}
+
+.cardAgent {
+  background-size: cover;
+  background-position-x: -20px;
+  transition: transform 0.5s ease;
+  padding-top: 130px;
+  max-width: 250px;
+  color: white;
+  font-family: "Calibri";
+  height: 300px;
+  max-height: 400px;
+}
+
+.cardAgent:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+}
+
+.cardAgent:hover > :not(.cardAgent-conteudo) {
+  transform: scale(1.05);
+}
+
+.cardAgent-conteudo {
+  margin-bottom: 0;
+  padding-top: 25px;
+  width: 250px;
+  background-image: linear-gradient(to bottom, rgba(250, 50, 0, 1), rgba(250, 60, 0, 1));
+  transform: translateY(70%);
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+}
+
+.cardAgent-texto {
+  opacity: 0;
+  transition: all 0.5s ease;
+  color: #FFFFFF;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.cardAgent:hover .cardAgent-texto {
+  transform: translateY(-150%);
+  opacity: 1;
+}
+
+.cardAgent-titulo {
+  position: relative;
+  width: max-content;
+  transition: all 0.5s ease;
+  color: #002233;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.cardAgent:hover .cardAgent-titulo {
+  opacity: 0;
+}
+
+.cardAgent:hover > .cardAgent-conteudo {
+  background-color: #ffffff;
+}
+
+.DivAgentSocial1 {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: -50px;
+  top: 30px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  color: #002233;
+  transform-origin: center;
+  transition: all 0.5s ease;
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+.cardAgent:hover .DivAgentSocial1 {
+  transform: rotate(360deg);
+  left: 20px;
+  background-color: #002233;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.DivAgentSocial2 {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: -50px;
+  top: 65px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  color: #002233;
+  transform-origin: center;
+  transition: all 0.5s ease;
+  transition-delay: 0.2s;
+  opacity: 0;
+}
+
+.cardAgent:hover .DivAgentSocial2 {
+  transform: rotate(360deg);
+  left: 20px;
+  background-color: #cc0088;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.DivAgentSocial3 {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: -50px;
+  top: 100px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  color: #002233;
+  transform-origin: center;
+  transition: all 0.5s ease;
+  transition-delay: 0.4s;
+  opacity: 0;
+}
+
+.cardAgent:hover .DivAgentSocial3 {
+  transform: rotate(360deg);
+  left: 20px;
+  background-color: #0077ff;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.DivRound {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin-left: 50%;
+  left: -25px;
+  top: -25px;
+  background-color: #ffffff;
+  color: #002233;
+  transform-origin: center;
+  transition: all 0.5s ease;
+}
+
+.cardAgent:hover .DivRound {
+  transform: rotate(180deg);
+  background-color: #002233;
+  color: #ffffff;
+}
+
+.botao-link {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  color: white;
+  background-color: orangered;
+  padding: 5px 10px 5px 10px;
+}
+
+.botao-link:hover,
+.botao-link:focus {
+  background-color: orangered;
+  color: black;
+}
+
+.cardAgent-borda {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.SlideCard {
+  height: 300px;
+  width: 100%;
+  transition: transform 0.5s ease;
+  padding: 10rem 0 0;
+}
+
+.SlideCardSpacing {
+  height: 400px;
+  width: 100%;
+  transition: transform 0.5s ease;
+  padding: 10rem 0 0;
+}
+
+.SlideCardSpacing:hover {
+  transform: scale(1.05);
+}
+.SlideCard:hover {
+  transform: scale(1.05);
+}
+
+.SlideCardContent {
+  padding: 1.5rem 1.5rem 1rem 0.8rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  transform: translateY(65%);
+  transition: transform 0.5s ease;
+  transition-delay: 0.5s;
+}
+
+.SlideCard:hover > :not(.SlideCardContent) {
+  transform: scale(1.05);
+}
+
+.SlideCard:hover > .SlideCardContent {
+  transform: translateY(20%);
+  transition-delay: 0.5s;
+}
+
+.TextCard {
+  color: lightgray;
+}
+
+.iconCat {
+  width: 70px;
+  height: 70px;
+}
+
+.linkdef {
+  text-decoration: none;
+  color: rgba(30, 30, 30, 1);
+}
+
+.linkdef:hover {
+  text-decoration: none;
+  color: orangered;
+}
+
+.img-client {
+  width: 120px;
+  height: 120px;
+}
+
+#DivOpOp {
+  position: absolute;
+  bottom: 0px;
+  left: right;
+  width: 450px;
+  height: 240px;
+  background-color:#002233;
+  z-index: 1;
+}
+
+.DivDataBlog {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 30%;
+  background-color: orangered;
+  color: white;
+}
+
+#DivServT {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 220px;
+  height: 180px;
+  background-color: rgba(30, 30, 30, 1);
+  z-index: 1;
+}
+
+#contentTeam {
+  position: relative;
+}
+
+#secTeam {
+  background-size: cover;
+  background: url("../../img/funcBg.jpg");
+  position: relative;
+}
+#secTeam::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.Botao:hover {
+  background-color: orangered;
+}
+
+.BotaoSlide:hover {
+  background-color: #CCCCCC;
+  color: #333333;
+}
+
+.Botao, .BotaoSlide {
+  background-color: rgba(0, 0, 0, 0);
+  height: 50px;
+  color: white;
+  border: 1px orangered solid;
+}
+
+.LinkFooter {
+  text-decoration: none;
+}
+.LinkFooter:hover {
+  text-decoration: none;
+  color: orangered;
+}
+
+.CaixaTexto {
+  background-color: rgba(0, 0, 0, 0);
+  height: 50px;
+  color: white;
+}
+.ListFooter {
+  list-style-type: none;
+}
+
+#secForm {
+  background-size: cover;
+  background: url("../../img/bgfree-consultation-bg.jpg");
+  position: relative;
+}
+#secForm::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.ImgInsta {
+  transition: all 0.5s ease;
+}
+
+.ImgInsta:hover {
+  transform: scale(1.1);
+}
+
+#LinkFAQ {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  align-items: center;
+  padding: 11px 15px;
+  width: 100%;
+  background: orangered;
+  color: #fff;
+  cursor: pointer;
+  border: 1px white groove;
+}
+
+#LinkFAQ:focus{
+  background-color:#CCCCCC;
+  color:orangered;
+}
+
+#DivCustServ {
+  visibility: hidden;
+  height: 0px;
+  background: red;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#DivCustServ.visible {
+  visibility: visible;
+  height: 200px;
+}
+
+.ItemFAQ {
+  background-color: lightgray;
+}
+
+.ItemFAQ:focus {
+  background-color: orangered;
+}
+
+#secApp {
+  background-size: cover;
+  background: url("../../img/bgfree-consultation-bg.jpg");
+  position: relative;
+}
+#secApp::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+/***************************KEYFRAMES***************************/
+@keyframes outer-enter {
+  0% {
+    transform: translateX(100%);
   }
-
-  .carousel-title {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bolder;
+  50% {
+    transform: translateX(0%);
   }
+}
 
-  .carousel-text {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+@media (prefers-reduced-motion: no-preference) {
+  #DivDescServ1 {
+    animation-name: outer-enter;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
   }
+}
 
-  .borda-imagem-top{
-      position:absolute;
-      top:-20px;
-      left:-5px;
-      z-index:-1;
-      background-color: #fd6914;    
-      width:250px;
-      height:250px;
+@keyframes wipe-enter {
+  0% {
+    transform: translateX(-100%);
   }
-
-  .descricao-imagem-bottom{
-    position:absolute;
-    top:300px;
-    left:105px;
-    z-index:1;
-    background-color: #fd6914;    
-    width:340px;
-    height:90px;
+  50% {
+    transform: translateX(0%);
   }
+}
 
-  .img-banner{
-    width:100%;
-    object-fit: contain;
+@media (prefers-reduced-motion: no-preference) {
+  #DivServ1 {
+    animation-name: wipe-enter;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
   }
-
-  .img-grow{
-    object-fit: fill;
-    transition: transform 0.5s;
-  }
-
-
-  .img-grow:hover{
-    transform: scale(1.2);
-  }
-
-  .div-categories{
-    background: url('http://slidesigma.com/themes/html/cali-constructions/assets/images/bg1.jpg');
-  }
-
-  
+}
