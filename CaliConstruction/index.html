@@ -24,6 +24,13 @@
 </head>
 
 <body>
+  <div class="loader-bg text-center">
+    <i class="fa fa-cog fa-spin fa-5x text-white" style="position:relative;top:35px;left:0px;"></i>
+    <i class="fa fa-cog fa-spin fa-5x text-dark" style="position:relative;top:65px;left:-10px;"></i>
+    <i class="fa fa-cog fa-spin fa-5x text-dark" style="position:relative;top:0px;left:-90px;"></i>
+  </div>
+
+
   <div class="container-fluid">
     <div class="row justify-content-md-center bg-deepdark">
       <div class="col-md-8 col-sm-12">
@@ -402,7 +409,7 @@
           <h4 class="title-medium">Trusted by</h4>
           <h1 class="title-big">15090+</h1>
         </div>
-        
+
       </div>
       <div class="col-12 col-lg-6 pt-4 px-5 bg-plin text-center DivRight" id="DivDescServ1">
         <h2 class="title-big text-white mb-3" style="line-height:50px;">
@@ -741,7 +748,7 @@
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
           </div>
-        
+
         </div>
       </div>
       <div class="col-12 col-md-6 px-0 d-inline-block DivRight" id="DivOp1" style="overflow:hidden">
@@ -1455,15 +1462,13 @@
       </div>
     </div>
   </div>
-
-
   <script>
 
     const divsLeft = document.querySelectorAll(".DivLeft");
     const divsRight = document.querySelectorAll(".DivRight");
     const divsFirstFade = document.querySelectorAll(".DivFirstFade");
     const divsSecFade = document.querySelectorAll(".DivSecFade");
-    
+
     const optionsAppear = {
       threshold: 0.2,
       rootMargin: "0px 1000px 0px 10000px"
@@ -1475,7 +1480,7 @@
     };
 
 
-/****************LEFT*************************/
+    /****************LEFT*************************/
     const appearFromLeft = new IntersectionObserver(function (entries, appearFromLeft) {
       // Loop over the entries
       entries.forEach(entry => {
@@ -1483,7 +1488,7 @@
         /*if (!entry.isIntersecting) {
           return;
           // Add the animation class
-        } */ if(entry.isIntersecting) {
+        } */ if (entry.isIntersecting) {
           console.log(entry.target);
           entry.target.classList.add("from-left");
           appearFromLeft.unobserve(entry.target);
@@ -1503,7 +1508,7 @@
         /*if (!entry.isIntersecting) {
           return;
           // Add the animation class
-        } */ if(entry.isIntersecting) {
+        } */ if (entry.isIntersecting) {
           console.log(entry.target);
           entry.target.classList.add("from-right");
           appearFromRight.unobserve(entry.target);
@@ -1515,15 +1520,15 @@
       appearFromRight.observe(div);
     });
 
- /****************Fade*************************/
- const appearInFades = new IntersectionObserver(function (entries, appearInFades) {
+    /****************Fade*************************/
+    const appearInFades = new IntersectionObserver(function (entries, appearInFades) {
       // Loop over the entries
       entries.forEach(entry => {
         // If the element is not visible
         /*if (!entry.isIntersecting) {
           return;
           // Add the animation class
-        } */ if(entry.isIntersecting) {
+        } */ if (entry.isIntersecting) {
           console.log(entry.target);
           entry.target.classList.add("fade-in");
           appearInFades.unobserve(entry.target);
@@ -1542,6 +1547,11 @@
     //appearInFades.observe(document.querySelector(".DivFade"));
   </script>
 
+<script>
+  setTimeout(function(){
+    $('.loader-bg').fadeOut();
+  },2500);
+</script>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="node_modules/intersection-observer/intersection-observer.js"></script>

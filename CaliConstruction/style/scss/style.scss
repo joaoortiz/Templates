@@ -108,9 +108,9 @@
   height: 90px;
 }
 
-#DivServ1{
-  overflow:hidden;
-  background-image:url('../../img/bgServ.jpg');
+#DivServ1 {
+  overflow: hidden;
+  background-image: url("../../img/bgServ.jpg");
   background-size: cover;
 }
 
@@ -167,7 +167,7 @@
 .cardAgent-texto {
   opacity: 0;
   transition: all 0.5s ease;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18pt;
   font-weight: bold;
 }
@@ -370,7 +370,7 @@
   left: right;
   width: 450px;
   height: 240px;
-  background-color:#002233;
+  background-color: #002233;
   z-index: 1;
 }
 
@@ -417,11 +417,12 @@
 }
 
 .BotaoSlide:hover {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   color: #333333;
 }
 
-.Botao, .BotaoSlide {
+.Botao,
+.BotaoSlide {
   background-color: rgba(0, 0, 0, 0);
   height: 50px;
   color: white;
@@ -484,9 +485,9 @@
   border: 1px white groove;
 }
 
-#LinkFAQ:focus{
-  background-color:#CCCCCC;
-  color:orangered;
+#LinkFAQ:focus {
+  background-color: #cccccc;
+  color: orangered;
 }
 
 #DivCustServ {
@@ -524,48 +525,59 @@
   height: 100%;
 }
 
-.DivLeft{
+.DivLeft {
   transition: all 1s ease;
   transform: translateX(-40%);
-  opacity:0;
+  opacity: 0;
 }
 
-.from-left{
+.from-left {
   transform: translateX(0%);
-  opacity:1;
+  opacity: 1;
 }
 
-.DivRight{
+.DivRight {
   transition: all 1s ease;
   transform: translateX(40%);
-  opacity:0;
+  opacity: 0;
 }
 
-.from-right{
+.from-right {
   transform: translateX(0%);
-  opacity:1;
+  opacity: 1;
 }
 
-.DivFade{
-  opacity:0;
-  transition:opacity 0.5s ease;
+.DivFade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-.DivFirstFade{
-  opacity:0;
-  transition:opacity 0.5s ease;
+.DivFirstFade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
   transition-delay: 0.4s;
 }
 
-.DivSecFade{
-  opacity:0;
-  transition:opacity 0.5s ease;
+.DivSecFade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
   transition-delay: 0.6s;
 }
 
-.fade-in{
-  opacity:1;
+.fade-in {
+  opacity: 1;
 }
+
+.loader-bg {
+  position: fixed;
+  z-index: 999999;
+  background: orangered;
+  width: 100%;
+  height: 100%;
+  padding-top: 350px;
+  vertical-align: middle;
+}
+
 /***************************KEYFRAMES***************************/
 
 @keyframes zoom {
