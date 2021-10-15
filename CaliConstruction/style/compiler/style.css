@@ -96,7 +96,7 @@
   animation: zoom 50s; }
 
 .img-grow {
-  object-fit: contain;
+  background-size: contain;
   transition: transform 0.5s; }
 
 .img-grow:hover {
