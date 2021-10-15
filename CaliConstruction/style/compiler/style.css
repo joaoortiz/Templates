@@ -90,13 +90,18 @@
   width: 340px;
   height: 90px; }
 
+#DivServ1 {
+  overflow: hidden;
+  background-image: url("../../img/bgServ.jpg");
+  background-size: cover; }
+
 .img-banner {
   width: 100%;
   object-fit: contain;
   animation: zoom 50s; }
 
 .img-grow {
-  background-size: cover;
+  object-fit: inherit;
   transition: transform 0.5s; }
 
 .img-grow:hover {
