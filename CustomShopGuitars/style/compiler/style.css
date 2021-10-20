@@ -1,0 +1,291 @@
+body {
+  font-family: "Francois One", sans-serif;
+  overflow-x: hidden; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt; }
+
+.section-header {
+  position: relative;
+  overflow: hidden;
+  background: url("../../img/bgBanner1.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  height: 110vh; }
+
+.section-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #000000;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%; }
+
+.section-content-results {
+  background: url("../../img/bgContent.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden; }
+
+.section-content-results::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #000000;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%; }
+
+.section-content-signature1 {
+  background-color: none; }
+
+#MenuTop {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: #ffffff; }
+
+#DivServ {
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  font-size: 20px;
+  color: gold; }
+
+.carousel-item h2 {
+  margin-top: 15vh;
+  font-size: 8vw;
+  color: #cccccc; }
+
+.carousel-item h1 {
+  font-size: 10vw;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(220, 220, 220, 0.8); }
+
+.control-arrow {
+  margin-top: 20vh;
+  color: #cccccc;
+  font-size: 5vw; }
+
+.carousel-caption p {
+  font-size: 22px;
+  text-shadow: black 2px 2px;
+  color: #ffffff; }
+
+#DivOwner {
+  overflow: hidden; }
+
+#ImgOwner {
+  transition: all 0.3s linear;
+  filter: blur(3px); }
+
+#ImgOwner:hover {
+  filter: blur(0);
+  transform: scale(1.03); }
+
+#DivYears {
+  background-color: #1e1e1e;
+  border: #ffffff 14px solid;
+  color: gold; }
+
+.Botao {
+  font-size: 12pt;
+  background-color: gold;
+  color: #333333; }
+
+.BotaoComp {
+  font-size: 12pt;
+  background-color: white;
+  color: #333333;
+  border: #333333 3px solid;
+  transition: all 0.3s ease; }
+
+.BotaoComp:hover {
+  text-decoration: none;
+  font-size: 12pt;
+  background-color: #333333;
+  color: white;
+  border: #333333 3px solid; }
+
+#DivArtist1 {
+  background: url("../../img/imgClapton.jpg");
+  background-size: cover;
+  background-position-x: center;
+  overflow: hidden;
+  height: 700px; }
+
+#DivArtist2 {
+  background: url("../../img/imgSmith.jpg");
+  background-size: cover;
+  background-position-x: center;
+  overflow: hidden;
+  height: 700px; }
+
+#DivArtist3 {
+  background: url("../../img/imgPaisley.jpg");
+  background-size: cover;
+  background-position-x: center;
+  overflow: hidden;
+  height: 700px; }
+
+.Botao:hover {
+  text-decoration: none;
+  background-color: #333333;
+  color: white; }
+
+.title-bordered {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5); }
+
+.title-bordered-inverse {
+  color: transparent;
+  -webkit-text-stroke: 1px white; }
+
+.count-number {
+  color: #ffd700; }
+
+.img-grow {
+  transition: all 0.5s ease; }
+
+.img-grow:hover {
+  transform: scale(1.1); }
+
+#ImgProj {
+  margin: auto;
+  overflow: hidden;
+  border-radius: 200px;
+  padding-top: -300px;
+  width: 400px;
+  height: 400px;
+  transition-delay: 0.5s;
+  border: rgba(255, 255, 255, 0.6) 5px solid;
+  transition: all 1s ease;
+  opacity: 1; }
+
+#ImgProj:hover {
+  box-shadow: 0 0 2em white; }
+
+.ImgMini {
+  overflow: hidden;
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  transition: box-shadow 1s ease;
+  border: rgba(255, 255, 255, 0.8) 5px solid; }
+
+.ImgMini:hover {
+  box-shadow: 0 0 2em white; }
+
+.ListData {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: white 1px groove; }
+
+.ListData:hover {
+  background-color: white;
+  color: #333333;
+  border: white 1px groove; }
+
+/*****OBSERVERS********/
+.DivGrow {
+  transition: all 1s ease;
+  transition-delay: 0.2s;
+  transform: scale(0); }
+
+.grow-up {
+  transform: scale(1); }
+
+.DivFade {
+  transition: opacity 2s ease;
+  transition-delay: 0.5s;
+  opacity: 0; }
+
+.fade-in {
+  opacity: 1; }
+
+.DivDown {
+  transition: all 0.8s ease;
+  transition-delay: 0.5s;
+  transform: translateY(120%);
+  opacity: 0; }
+
+.from-down {
+  transform: translateY(0%);
+  opacity: 1; }
+
+.DivLeft {
+  transition: all 1s ease;
+  transition-delay: 0.2s;
+  transform: translateX(-100%);
+  opacity: 0; }
+
+.from-left {
+  transform: translateX(0%);
+  opacity: 1; }
+
+.DivRight {
+  transition: all 1s ease;
+  transition-delay: 0.2s;
+  transform: translateX(100%);
+  opacity: 0; }
+
+.from-right {
+  transform: translateX(0%);
+  opacity: 1; }
+
+.DivBlur {
+  transition: all 1s ease;
+  filter: blur(10px); }
+
+.no-blur {
+  filter: blur(0px); }
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1); }
+  to {
+    transform: scale(1.5, 1.5); } }
+@media (min-width: 993px) {
+  #DivYears {
+    position: absolute;
+    top: 250px;
+    margin-left: 75%;
+    width: 180px;
+    height: 180px; } }
+@media (max-width: 992px) {
+  #DivYears {
+    position: absolute;
+    top: 360px;
+    margin-left: -90px;
+    left: 50%;
+    width: 180px;
+    height: 180px; } }
+@media (min-width: 1200px) {
+  #DivProj1 {
+    position: absolute;
+    left: 38px;
+    top: 120px;
+    transition-delay: 0.2s; }
+
+  #DivProj2 {
+    position: absolute;
+    left: 380px;
+    top: 120px;
+    transition-delay: 0.4s; } }
+@media (max-width: 1199px) {
+  #DivProj1 {
+    position: absolute;
+    left: 38px;
+    top: 120px;
+    transition-delay: 0.2s; }
+
+  #DivProj2 {
+    position: absolute;
+    left: 380px;
+    top: 120px;
+    transition-delay: 0.4s; } }
+
+/*# sourceMappingURL=style.css.map */
