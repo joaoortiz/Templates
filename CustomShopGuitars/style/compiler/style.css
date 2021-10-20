@@ -87,9 +87,7 @@ p {
   transform: scale(1.03); }
 
 #DivYears {
-  background-color: #1e1e1e;
-  border: #ffffff 14px solid;
-  color: gold; }
+  border: #ffffff 14px solid; }
 
 .Botao {
   font-size: 12pt;
@@ -115,32 +113,37 @@ p {
   background-size: cover;
   background-position-x: center;
   overflow: hidden;
-  height: 700px; }
+  max-height: 850px; }
 
 #DivArtist2 {
   background: url("../../img/imgSmith.jpg");
   background-size: cover;
   background-position-x: center;
   overflow: hidden;
-  height: 700px; }
+  max-height: 850px; }
 
 #DivArtist3 {
   background: url("../../img/imgPaisley.jpg");
   background-size: cover;
   background-position-x: center;
   overflow: hidden;
-  height: 700px; }
+  max-height: 850px; }
 
 .Botao:hover {
   text-decoration: none;
   background-color: #333333;
   color: white; }
 
+.title-big {
+  font-size: 40pt; }
+
 .title-bordered {
+  font-size: 40pt;
   color: transparent;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5); }
 
 .title-bordered-inverse {
+  font-size: 40pt;
   color: transparent;
   -webkit-text-stroke: 1px white; }
 

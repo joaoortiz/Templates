@@ -6,6 +6,7 @@ p {
     font-family: "Roboto", sans-serif;
     font-size: 12pt;
 }
+
 .section-header {
     position: relative;
     overflow: hidden;
@@ -102,9 +103,7 @@ p {
 }
 
 #DivYears {
-    background-color: rgba(30, 30, 30, 1);
     border: #ffffff 14px solid;
-    color: gold;
 }
 
 .Botao {
@@ -133,7 +132,7 @@ p {
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
-    height:700px
+    max-height: 850px;
 }
 
 #DivArtist2 {
@@ -141,7 +140,7 @@ p {
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
-    height:700px;
+    max-height: 850px;
 }
 
 #DivArtist3 {
@@ -149,7 +148,7 @@ p {
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
-    height:700px;
+    max-height: 850px;
 }
 
 .Botao:hover {
@@ -158,12 +157,18 @@ p {
     color: white;
 }
 
+.title-big {
+    font-size: 40pt;
+}
+
 .title-bordered {
+    font-size: 40pt;
     color: transparent;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
 }
 
 .title-bordered-inverse {
+    font-size: 40pt;
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
 }
