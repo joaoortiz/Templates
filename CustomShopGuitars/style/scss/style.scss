@@ -158,7 +158,7 @@ p {
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
-    max-height: 850px;
+    min-height: 850px;
 }
 
 #DivArtist2 {
@@ -166,7 +166,7 @@ p {
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
-    max-height: 850px;
+    min-height: 850px;
 }
 
 #DivArtist3 {
@@ -174,7 +174,7 @@ p {
     background-size: cover;
     background-position-x: center;
     overflow: hidden;
-    max-height: 850px;
+    min-height: 850px;
 }
 
 .Botao:hover {

@@ -135,21 +135,21 @@ p {
   background-size: cover;
   background-position-x: center;
   overflow: hidden;
-  max-height: 850px; }
+  min-height: 850px; }
 
 #DivArtist2 {
   background: url("../../img/imgSmith.jpg");
   background-size: cover;
   background-position-x: center;
   overflow: hidden;
-  max-height: 850px; }
+  min-height: 850px; }
 
 #DivArtist3 {
   background: url("../../img/imgPaisley.jpg");
   background-size: cover;
   background-position-x: center;
   overflow: hidden;
-  max-height: 850px; }
+  min-height: 850px; }
 
 .Botao:hover {
   text-decoration: none;
