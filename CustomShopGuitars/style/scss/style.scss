@@ -106,13 +106,22 @@ p {
     border: #ffffff 14px solid;
 }
 
-.Botao {
+.BotaoGold {
     font-size: 12pt;
-    background-color: gold;
+    background-color: #ffc107;
     color: #333333;
+    border: #333333 3px solid;
+    transition: all 0.3s ease;
 }
 
-.BotaoComp {
+.BotaoGold:hover {
+    text-decoration: none;
+    background-color: #333333;
+    color: #FFFFFF;
+    border: #333333 3px solid;
+}
+
+.BotaoWhite {
     font-size: 12pt;
     background-color: white;
     color: #333333;
@@ -120,13 +129,30 @@ p {
     transition: all 0.3s ease;
 }
 
-.BotaoComp:hover {
+.BotaoWhite:hover {
     text-decoration: none;
     font-size: 12pt;
     background-color: #333333;
     color: white;
     border: #333333 3px solid;
 }
+
+.BotaoDark {
+    font-size: 12pt;
+    background-color: #333333;
+    color: #333333;
+    border: #333333 3px solid;
+    transition: all 0.3s ease;
+}
+
+.BotaoDark:hover {
+    text-decoration: none;
+    font-size: 12pt;
+    background-color: #ffc107;
+    color: white;
+    border: #333333 3px solid;
+}
+
 #DivArtist1 {
     background: url("../../img/imgClapton.jpg");
     background-size: cover;
