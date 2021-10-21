@@ -54,7 +54,7 @@ p {
 #MenuTop {
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
-    color: #f1f4f8;
+    color: #ffffff;
 }
 
 #DivServ {
@@ -67,7 +67,7 @@ p {
 .carousel-item h2 {
     margin-top: 15vh;
     font-size: 8vw;
-    //text-shadow: #f1f4f8 2px 2px;
+    //text-shadow: #ffffff 2px 2px;
     color: #cccccc;
 }
 
@@ -86,7 +86,7 @@ p {
 .carousel-caption p {
     font-size: 22px;
     text-shadow: black 2px 2px;
-    color: #f1f4f8;
+    color: #ffffff;
 }
 
 #DivOwner{
@@ -104,7 +104,15 @@ p {
 }
 
 #DivYears {
-    border: #f1f4f8 14px solid;
+    border: #ffffff 14px solid;
+}
+
+.card-counters {
+    border: #ffffff 14px solid;
+}
+
+.card-counters2 {
+    border: #ffffff 14px solid;
 }
 
 #DivTransp{
@@ -130,7 +138,7 @@ p {
 }
 
 #CarouselStyle:hover{
-    box-shadow: 0 0 5em #f1f4f8;
+    box-shadow: 0 0 5em #ffffff;
 }
 
 #DivSatriani{
@@ -170,24 +178,24 @@ p {
 .BotaoGold:hover {
     text-decoration: none;
     background-color: #333333;
-    color: #f1f4f8;
+    color: #ffffff;
     border: #333333 3px solid;
 }
 
-.Botaolight {
+.BotaoWhite {
     width:250px;
     font-size: 12pt;
-    background-color: #f1f4f8;
+    background-color: #ffffff;
     color: #333333;
     border: #333333 3px solid;
     transition: all 0.3s ease;
 }
 
-.Botao#f1f4f8:hover {
+.BotaoWhite:hover {
     text-decoration: none;
     font-size: 12pt;
     background-color: #333333;
-    color: #f1f4f8;
+    color: #ffffff;
     border: #333333 3px solid;
 }
 
@@ -204,7 +212,7 @@ p {
     text-decoration: none;
     font-size: 12pt;
     background-color: #ffc107;
-    color: #f1f4f8;
+    color: #ffffff;
     border: #333333 3px solid;
 }
 
@@ -224,20 +232,6 @@ p {
     min-height: 850px;
 }
 
-.card-counters{
-    width:90%;
-    height:200px;
-    background-color:#ffc107;
-    border: #f1f4f8 10px solid;
-}
-
-.card-counters h1{
-    font-size: 6vh;
-}
-
-.card-counters h4{
-    font-size: 1.2vw;
-}
 
 #DivArtist3 {
     background: url("../../img/imgPaisley.jpg");
@@ -259,7 +253,7 @@ p {
 .Botao:hover {
     text-decoration: none;
     background-color: #333333;
-    color: #f1f4f8;
+    color: #ffffff;
 }
 
 .title-big {
@@ -308,14 +302,14 @@ p {
 
 .ListData {
     background-color: rgba(0, 0, 0, 0);
-    color: #f1f4f8;
-    border: #f1f4f8 1px groove;
+    color: #ffffff;
+    border: #ffffff 1px groove;
 }
 
 .ListData:hover {
     background-color: rgba(255, 255, 255, 1);
     color: #333333;
-    border: #f1f4f8 1px groove;
+    border: #ffffff 1px groove;
 }
 
 .CaixaTexto{
@@ -414,6 +408,22 @@ p {
         margin-left: 75%;
         width: 180px;
         height: 180px;
+    }
+
+    .card-counters{
+        position: absolute;
+        top: 240px;
+        margin-left: 65%;
+        width: 280px;
+        height: auto;
+    }
+
+    .card-counters2{
+        position: absolute;
+        top: -60px;
+        margin-left:-30%;
+        width: 280px;
+        height: auto;
     }
 }
 @media (max-width: 992px) {
