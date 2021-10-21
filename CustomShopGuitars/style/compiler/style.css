@@ -47,7 +47,7 @@ p {
 #MenuTop {
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
-  color: #ffffff; }
+  color: #f1f4f8; }
 
 #DivServ {
   margin-top: 3vh;
@@ -73,7 +73,7 @@ p {
 .carousel-caption p {
   font-size: 22px;
   text-shadow: black 2px 2px;
-  color: #ffffff; }
+  color: #f1f4f8; }
 
 #DivOwner {
   overflow: hidden; }
@@ -87,7 +87,7 @@ p {
   transform: scale(1.03); }
 
 #DivYears {
-  border: #ffffff 14px solid; }
+  border: #f1f4f8 14px solid; }
 
 #DivTransp {
   z-index: 1; }
@@ -98,6 +98,17 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   height: 700px; }
+
+.carousel li {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px; }
+
+#CarouselStyle {
+  transition: box-shadow 0.5s ease; }
+
+#CarouselStyle:hover {
+  box-shadow: 0 0 5em #f1f4f8; }
 
 #DivSatriani {
   background-image: url("../../img/imgSatriani.png");
@@ -131,22 +142,22 @@ p {
 .BotaoGold:hover {
   text-decoration: none;
   background-color: #333333;
-  color: #ffffff;
+  color: #f1f4f8;
   border: #333333 3px solid; }
 
-.BotaoWhite {
+.Botaolight {
   width: 250px;
   font-size: 12pt;
-  background-color: white;
+  background-color: #f1f4f8;
   color: #333333;
   border: #333333 3px solid;
   transition: all 0.3s ease; }
 
-.BotaoWhite:hover {
+.Botao#f1f4f8:hover {
   text-decoration: none;
   font-size: 12pt;
   background-color: #333333;
-  color: white;
+  color: #f1f4f8;
   border: #333333 3px solid; }
 
 .BotaoDark {
@@ -161,7 +172,7 @@ p {
   text-decoration: none;
   font-size: 12pt;
   background-color: #ffc107;
-  color: white;
+  color: #f1f4f8;
   border: #333333 3px solid; }
 
 #DivArtist1 {
@@ -177,6 +188,18 @@ p {
   background-position-x: center;
   overflow: hidden;
   min-height: 850px; }
+
+.card-counters {
+  width: 90%;
+  height: 200px;
+  background-color: #ffc107;
+  border: #f1f4f8 10px solid; }
+
+.card-counters h1 {
+  font-size: 6vh; }
+
+.card-counters h4 {
+  font-size: 1.2vw; }
 
 #DivArtist3 {
   background: url("../../img/imgPaisley.jpg");
@@ -195,7 +218,7 @@ p {
 .Botao:hover {
   text-decoration: none;
   background-color: #333333;
-  color: white; }
+  color: #f1f4f8; }
 
 .title-big {
   font-size: 40pt; }
@@ -219,28 +242,6 @@ p {
 .img-grow:hover {
   transform: scale(1.1); }
 
-#ImgProj {
-  margin: auto;
-  overflow: hidden;
-  padding-top: -300px;
-  width: 300px;
-  height: 300px;
-  transition-delay: 0.5s;
-  transition: all 1s ease;
-  opacity: 1;
-  align-items: center; }
-
-#ImgProj:hover {
-  box-shadow: 0 0 2em white; }
-
-.ImgMini {
-  overflow: hidden;
-  width: 70px;
-  height: 70px; }
-
-#ImgMini:hover {
-  box-shadow: 0 0 2em white; }
-
 #DivProj1 {
   position: absolute;
   left: 30px;
@@ -257,13 +258,13 @@ p {
 
 .ListData {
   background-color: rgba(0, 0, 0, 0);
-  color: white;
-  border: white 1px groove; }
+  color: #f1f4f8;
+  border: #f1f4f8 1px groove; }
 
 .ListData:hover {
   background-color: white;
   color: #333333;
-  border: white 1px groove; }
+  border: #f1f4f8 1px groove; }
 
 .CaixaTexto {
   background-color: transparent;
