@@ -89,7 +89,39 @@ p {
 #DivYears {
   border: #ffffff 14px solid; }
 
+#DivTransp {
+  z-index: 1; }
+
+#DivAngus {
+  background-image: url("../../img/imgAngus.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px; }
+
+#DivSatriani {
+  background-image: url("../../img/imgSatriani.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px; }
+
+#DivVai {
+  background-image: url("../../img/imgVai.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px; }
+
+#DivKnopfler {
+  background-image: url("../../img/imgKnopfler.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px; }
+
 .BotaoGold {
+  width: 250px;
   font-size: 12pt;
   background-color: #ffc107;
   color: #333333;
@@ -99,10 +131,11 @@ p {
 .BotaoGold:hover {
   text-decoration: none;
   background-color: #333333;
-  color: #FFFFFF;
+  color: #ffffff;
   border: #333333 3px solid; }
 
 .BotaoWhite {
+  width: 250px;
   font-size: 12pt;
   background-color: white;
   color: #333333;
@@ -117,6 +150,7 @@ p {
   border: #333333 3px solid; }
 
 .BotaoDark {
+  width: 250px;
   font-size: 12pt;
   background-color: #333333;
   color: #333333;
@@ -151,6 +185,13 @@ p {
   overflow: hidden;
   min-height: 850px; }
 
+#DivBlues {
+  background: url("../../img/imgBlues.jpg");
+  background-size: cover;
+  background-position-x: center;
+  overflow: hidden;
+  min-height: 700px; }
+
 .Botao:hover {
   text-decoration: none;
   background-color: #333333;
@@ -181,28 +222,38 @@ p {
 #ImgProj {
   margin: auto;
   overflow: hidden;
-  border-radius: 200px;
   padding-top: -300px;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   transition-delay: 0.5s;
-  border: rgba(255, 255, 255, 0.6) 5px solid;
   transition: all 1s ease;
-  opacity: 1; }
+  opacity: 1;
+  align-items: center; }
 
 #ImgProj:hover {
   box-shadow: 0 0 2em white; }
 
 .ImgMini {
   overflow: hidden;
-  border-radius: 100px;
-  width: 150px;
-  height: 150px;
-  transition: box-shadow 1s ease;
-  border: rgba(255, 255, 255, 0.8) 5px solid; }
+  width: 70px;
+  height: 70px; }
 
-.ImgMini:hover {
+#ImgMini:hover {
   box-shadow: 0 0 2em white; }
+
+#DivProj1 {
+  position: absolute;
+  left: 30px;
+  top: 220px;
+  transition-delay: 0.2s;
+  overflow: hidden; }
+
+#DivProj2 {
+  position: absolute;
+  left: 420px;
+  top: 50px;
+  transition-delay: 0.4s;
+  overflow: hidden; }
 
 .ListData {
   background-color: rgba(0, 0, 0, 0);
@@ -213,6 +264,16 @@ p {
   background-color: white;
   color: #333333;
   border: white 1px groove; }
+
+.CaixaTexto {
+  background-color: transparent;
+  border: #333333 2px solid;
+  height: 50px; }
+
+.AreaTexto {
+  background-color: transparent;
+  border: #333333 2px solid;
+  resize: none; }
 
 /*****OBSERVERS********/
 .DivGrow {
@@ -288,29 +349,5 @@ p {
     left: 50%;
     width: 180px;
     height: 180px; } }
-@media (min-width: 1200px) {
-  #DivProj1 {
-    position: absolute;
-    left: 38px;
-    top: 120px;
-    transition-delay: 0.2s; }
-
-  #DivProj2 {
-    position: absolute;
-    left: 380px;
-    top: 120px;
-    transition-delay: 0.4s; } }
-@media (max-width: 1199px) {
-  #DivProj1 {
-    position: absolute;
-    left: 38px;
-    top: 120px;
-    transition-delay: 0.2s; }
-
-  #DivProj2 {
-    position: absolute;
-    left: 380px;
-    top: 120px;
-    transition-delay: 0.4s; } }
 
 /*# sourceMappingURL=style.css.map */
