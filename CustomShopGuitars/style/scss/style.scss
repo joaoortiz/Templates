@@ -93,6 +93,14 @@ p {
     overflow:hidden;
 }
 
+.ImgBlues {
+    transition: all 0.3s ease;
+}
+
+.ImgBlues:hover {
+    transform: scale(1.2);
+}
+
 #ImgOwner {
     transition: all 0.3s linear;
     filter: blur(3px);
@@ -447,4 +455,6 @@ p {
         width: 180px;
         height: 180px;
     }
+
+       
 }
