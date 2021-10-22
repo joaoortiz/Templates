@@ -90,10 +90,10 @@ p {
   border: #ffffff 14px solid; }
 
 .card-counters {
-  border: #ffffff 14px solid; }
+  border: #ffffff 10px solid; }
 
 .card-counters2 {
-  border: #ffffff 14px solid; }
+  border: #ffffff 10px solid; }
 
 #DivTransp {
   z-index: 1; }
@@ -324,6 +324,16 @@ p {
 .no-blur {
   filter: blur(0px); }
 
+.LinkPill {
+  background-color: #ffc107;
+  color: #333333;
+  text-decoration: none;
+  padding-bottom: 25px;
+  padding-top: 25px; }
+
+.LinkPill:hover {
+  color: #333333; }
+
 @keyframes zoom {
   from {
     transform: scale(1, 1); }
@@ -339,16 +349,16 @@ p {
 
   .card-counters {
     position: absolute;
-    top: 240px;
-    margin-left: 65%;
-    width: 280px;
+    top: 230px;
+    margin-left: 80%;
+    width: 180px;
     height: auto; }
 
   .card-counters2 {
     position: absolute;
     top: -60px;
-    margin-left: -30%;
-    width: 280px;
+    margin-left: -20%;
+    width: 180px;
     height: auto; } }
 @media (max-width: 992px) {
   #DivYears {

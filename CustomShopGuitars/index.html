@@ -128,8 +128,6 @@
                             purus, quis aliquet est malesuada ac.</p>
 
                         <a class="BotaoWhite py-4 mt-5 float-right text-center" href="#">Learn More</a>
-
-
                 </div>
 
                 <div class="col-12 col-md-6 pl-5 my-0 pt-0 pb-0 d-none d-md-block">
@@ -163,7 +161,7 @@
 
     <section class="section-style bg-dark">
         <div class="container">
-            <div class="row">
+            <div class="row pb-5">
                 <div class="col-12 pb-3 pt-5 px-5">
                     <h1 class="my-2 text-gold title-big text-center mr-4">CHOOSE YOUR STYLE</h1>
                     <h1 class="title-bordered-inverse text-center mr-4">START TO PLAY</h1>
@@ -214,34 +212,79 @@
     <section class="section-numbers bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center my-5">
-                    <h1 class="title-big text-gold">OUR COMPANY MAKES STORY</h1>
-                    <h1 class="title-bordered mb-5">IN NUMBERS</h1>
-
+                <div class="col-12 text-center mt-5 mb-3">
+                    <h1 class="title-big text-dark">OUR COMPANY MAKES STORY</h1>
+                    <h1 class="title-bordered mb-0">IN NUMBERS</h1>
                 </div>
             </div>
-            <div class="row pb-5 px-5">
-                <div class="col-12 col-md-6" style="min-height:450px;">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 text-center mt-2 mb-5">
+                    <ul class="nav nav-pills nav-justified" role="tablist">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link active LinkPill" data-toggle="pill" href="#TabHist1">70"</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link LinkPill" data-toggle="pill" href="#TabHist2">80"</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link LinkPill" data-toggle="pill" href="#TabHist3">90"</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link LinkPill" data-toggle="pill" href="#TabHist4">2K</a>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <a class="nav-link LinkPill" data-toggle="pill" href="#TabHist5">10"</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="TabHist1" role="tab-panel">
+                    <div class="row pb-3 px-5">
+                        <div class="col-12 col-md-6" style="min-height:450px;">
 
-                    <div class="img-limit" id="DivOwner">
-                        <img src="img/imgBlues.jpg" id="" class="img-fluid">
+                            <div class="img-limit" id="DivOwner">
+                                <img src="img/imgBlues.jpg" id="" class="img-fluid">
+                            </div>
+
+                            <div class="card-counters py-3 text-center DivGrow bg-dark py-2">
+                                <i class="fa fa-users fa-2x text-gold"></i>
+                                <h1 class="value  text-gold" data-target="318">0</h1>
+                                <h6 class="text-gold">Satisfied Customers</hg>
+                            </div>
+
+                            <div class="card-counters2 py-3 text-center DivGrow bg-dark py-2">
+                                <i class="fa fa-cogs fa-2x text-gold"></i>
+                                <h1 class="value text-gold" data-target="85">0</h1>
+                                <h6 class="text-gold">Custom Projects</h6>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h1 class="text-dark">1972 - Just the beginning</h1>
+                            <p align="justify">Mauris vitae fringilla felis. Quisque odio nulla, venenatis at
+                                pellentesque ac, sagittis sagittis dui. Cras varius metus velit, molestie pharetra quam
+                                tristique sit amet. Sed id sodales ipsum. Suspendisse pellentesque libero et porta
+                                gravida. Curabitur mollis lacus eget sapien facilisis, ut pharetra urna fringilla. Nulla
+                                egestas diam quis dui blandit blandit ut vitae ex. Sed imperdiet felis consectetur nibh
+                                lacinia imperdiet.</p>
+                        </div>
                     </div>
-
-                    <div class="card-counters py-3 text-center DivGrow bg-gold py-2">
-                        <i class="fa fa-users fa-3x d-inline-block mr-5"></i>
-                        <h1 class="value d-inline-block title-big" data-target="318">0</h1>
-                        <h5>Satisfied Customers</h5>
-                    </div>
-
-                    <div class="card-counters2 py-3 text-center DivGrow bg-gold py-2">
-                        <i class="fa fa-cogs fa-3x d-inline-block mr-5"></i>
-                        <h1 class="value d-inline-block title-big" data-target="258">0</h1>
-                        <h5>Custom Projects</h5>
-                    </div>
-
                 </div>
 
+                <div class="tab-pane fade" id="TabHist2" role="tab-panel">
+                    <div class="row pb-5 px-0">
+                        <div class="col-12" style="min-height:450px;">
+                            <h1 class="text-dark">The Work continues...</h1>
+                            <p align="justity">
+                                Suspendisse id porttitor velit. Nam fermentum eget justo eu bibendum. Aliquam mattis ipsum laoreet, condimentum urna ut, tristique nulla. Vivamus id consectetur nulla. Quisque non malesuada ante.
+                            </p>
 
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -423,7 +466,7 @@
     <!-- Optional JavaScript -->
     <script>
         const counters = document.querySelectorAll('.value');
-        const speed = 1550;
+        const speed = 5000;
         counters.forEach(counter => {
             const animate = () => {
                 const value = +counter.getAttribute('data-target');
@@ -431,10 +474,10 @@
 
 
 
-                const time = value / speed;
+                const time = value / (speed);
                 if (data < value) {
                     counter.innerText = Math.ceil(data + time);
-                    setTimeout(animate, 1);
+                    setTimeout(animate, 8);
                 } else {
                     counter.innerText = value;
                 }
