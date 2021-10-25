@@ -81,6 +81,26 @@ p {
 .ImgBlues {
   transition: all 0.3s ease; }
 
+.DivMagDesc {
+  position: absolute;
+  top: -70px;
+  left: 0px;
+  border: 10px solid #ffffff; }
+
+#DivInfoCountry1 {
+  position: absolute;
+  top: 30px;
+  left: -65px;
+  border: 10px solid #ffffff;
+  width: 200px; }
+
+#DivInfoCountry2 {
+  position: absolute;
+  top: 185px;
+  left: 265px;
+  border: 10px solid #ffffff;
+  width: 240px; }
+
 .ImgBlues:hover {
   transform: scale(1.2); }
 
@@ -209,19 +229,60 @@ p {
   min-height: 850px; }
 
 #DivBlues {
+  position: relative;
   background: url("../../img/imgBlues.jpg");
   background-size: cover;
   background-position-x: center;
   overflow: hidden;
   min-height: 700px; }
 
+#DivBlues::before {
+  left: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%; }
+
+#ImgMiniJD1 {
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  transition: all 0.3s ease; }
+
+#ImgMiniJD1:hover {
+  box-shadow: 0 0 2em #000000; }
+
+#ImgMiniJD1:hover #DivMiniName1 {
+  opacity: 1;
+  transform: translateY(-220%); }
+
+#ImgJD {
+  transition: all 0.2s ease; }
+
+#ImgJD:hover {
+  transform: scale(1.2); }
+
+#DivMiniName1 {
+  transition: all 0.2s ease-in;
+  z-index: 1000;
+  opacity: 0; }
+
 .Botao:hover {
   text-decoration: none;
   background-color: #333333;
   color: #ffffff; }
 
+.ImgMag {
+  height: 450px;
+  transition: all 0.5s ease; }
+
 .title-big {
   font-size: 40pt; }
+
+#Car2k {
+  transition: all 0.8s ease; }
 
 .title-bordered {
   font-size: 40pt;

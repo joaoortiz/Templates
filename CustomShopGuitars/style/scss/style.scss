@@ -34,7 +34,6 @@ p {
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    
 }
 
 .section-content-results::before {
@@ -89,12 +88,35 @@ p {
     color: #ffffff;
 }
 
-#DivOwner{
-    overflow:hidden;
+#DivOwner {
+    overflow: hidden;
 }
 
 .ImgBlues {
     transition: all 0.3s ease;
+}
+
+.DivMagDesc {
+    position: absolute;
+    top: -70px;
+    left: 0px;
+    border: 10px solid #ffffff;
+}
+
+#DivInfoCountry1 {
+    position: absolute;
+    top: 30px;
+    left: -65px;
+    border: 10px solid #ffffff;
+    width: 200px;
+}
+
+#DivInfoCountry2 {
+    position: absolute;
+    top: 185px;
+    left: 265px;
+    border: 10px solid #ffffff;
+    width: 240px;
 }
 
 .ImgBlues:hover {
@@ -123,59 +145,58 @@ p {
     border: #ffffff 10px solid;
 }
 
-#DivTransp{
-    z-index:1;
+#DivTransp {
+    z-index: 1;
 }
 
-#DivAngus{
-    background-image:url('../../img/imgAngus.png');
-    background-size:contain;
+#DivAngus {
+    background-image: url("../../img/imgAngus.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height:700px;
+    height: 700px;
 }
 
-.carousel li{
-    border-radius:100%;
-    width:10px;
-    height:10px;
+.carousel li {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
 }
 
-#CarouselStyle{
+#CarouselStyle {
     transition: box-shadow 0.5s ease;
 }
 
-#CarouselStyle:hover{
+#CarouselStyle:hover {
     box-shadow: 0 0 5em #ffffff;
 }
 
-#DivSatriani{
-    background-image:url('../../img/imgSatriani.png');
-    background-size:contain;
+#DivSatriani {
+    background-image: url("../../img/imgSatriani.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height:700px;
+    height: 700px;
 }
 
-#DivVai{
-    background-image:url('../../img/imgVai.png');
-    background-size:contain;
+#DivVai {
+    background-image: url("../../img/imgVai.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height:700px;
+    height: 700px;
 }
 
-#DivKnopfler{
-    background-image:url('../../img/imgKnopfler.png');
-    background-size:contain;
+#DivKnopfler {
+    background-image: url("../../img/imgKnopfler.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height:700px;
+    height: 700px;
 }
-
 
 .BotaoGold {
-    width:250px;
+    width: 250px;
     font-size: 12pt;
     background-color: #ffc107;
     color: #333333;
@@ -191,7 +212,7 @@ p {
 }
 
 .BotaoWhite {
-    width:250px;
+    width: 250px;
     font-size: 12pt;
     background-color: #ffffff;
     color: #333333;
@@ -208,7 +229,7 @@ p {
 }
 
 .BotaoDark {
-    width:250px;
+    width: 250px;
     font-size: 12pt;
     background-color: #333333;
     color: #333333;
@@ -240,7 +261,6 @@ p {
     min-height: 850px;
 }
 
-
 #DivArtist3 {
     background: url("../../img/imgPaisley.jpg");
     background-size: cover;
@@ -250,6 +270,7 @@ p {
 }
 
 #DivBlues {
+    position:relative;
     background: url("../../img/imgBlues.jpg");
     background-size: cover;
     background-position-x: center;
@@ -257,6 +278,44 @@ p {
     min-height: 700px;
 }
 
+#DivBlues::before {
+    left:0;    
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);    
+    width: 100%;
+    height: 100%;
+}
+
+#ImgMiniJD1 {
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    transition: all 0.3s ease;
+}
+
+#ImgMiniJD1:hover {
+    box-shadow: 0 0 2em #000000;
+}
+#ImgMiniJD1:hover #DivMiniName1 {
+    opacity: 1;
+    transform: translateY(-220%);
+}
+
+#ImgJD {
+    transition: all 0.2s ease;
+}
+
+#ImgJD:hover {
+    transform: scale(1.2);
+}
+
+#DivMiniName1 {
+    transition: all 0.2s ease-in;
+    z-index: 1000;
+    opacity: 0;
+}
 
 .Botao:hover {
     text-decoration: none;
@@ -264,8 +323,17 @@ p {
     color: #ffffff;
 }
 
+.ImgMag {
+    height: 450px;
+    transition: all 0.5s ease;
+}
+
 .title-big {
     font-size: 40pt;
+}
+
+#Car2k {
+    transition: all 0.8s ease;
 }
 
 .title-bordered {
@@ -290,7 +358,6 @@ p {
 .img-grow:hover {
     transform: scale(1.1);
 }
-
 
 #DivProj1 {
     position: absolute;
@@ -320,19 +387,17 @@ p {
     border: #ffffff 1px groove;
 }
 
-.CaixaTexto{
-    background-color:transparent;
+.CaixaTexto {
+    background-color: transparent;
     border: #333333 2px solid;
-    height:50px;
+    height: 50px;
 }
 
-.AreaTexto{
-    background-color:transparent;
+.AreaTexto {
+    background-color: transparent;
     border: #333333 2px solid;
-    resize:none;
+    resize: none;
 }
-
-
 
 /*****OBSERVERS********/
 .DivGrow {
@@ -400,16 +465,16 @@ p {
     filter: blur(0px);
 }
 
-.LinkPill{
+.LinkPill {
     background-color: #ffc107;
-    color:#333333;
+    color: #333333;
     text-decoration: none;
     padding-bottom: 25px;
-    padding-top: 25px;;
+    padding-top: 25px;
 }
 
-.LinkPill:hover{
-    color:#333333;
+.LinkPill:hover {
+    color: #333333;
 }
 
 @keyframes zoom {
@@ -430,7 +495,7 @@ p {
         height: 180px;
     }
 
-    .card-counters{
+    .card-counters {
         position: absolute;
         top: 230px;
         margin-left: 80%;
@@ -438,10 +503,10 @@ p {
         height: auto;
     }
 
-    .card-counters2{
+    .card-counters2 {
         position: absolute;
         top: -60px;
-        margin-left:-20%;
+        margin-left: -20%;
         width: 180px;
         height: auto;
     }
@@ -455,6 +520,4 @@ p {
         width: 180px;
         height: 180px;
     }
-
-       
 }
