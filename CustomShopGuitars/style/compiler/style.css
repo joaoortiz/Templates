@@ -500,31 +500,6 @@ p {
     margin-left: -90px;
     left: 50%;
     width: 180px;
-    height: 180px; }
-
-  .navbar-collapse {
-    position: fixed;
-    top: 110px;
-    left: 0px;
-    padding-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    height: 100%;
-    width: 70%;
-    background-color: white; }
-
-  .navbar-collapse.collapsing {
-    height: 100%;
-    left: -75%;
-    transition: height 0s ease; }
-
-  .navbar-collapse.show {
-    height: 100%;
-    left: 0;
-    transition: left 0.4s ease-in-out; }
-
-  .navbar.toggler.collapsed ~ .navbar-collapse {
-    transition: left 0.4s ease-in-out; } }
+    height: 180px; } }
 
 /*# sourceMappingURL=style.css.map */
