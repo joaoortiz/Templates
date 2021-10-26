@@ -260,12 +260,12 @@ p {
   left: 15px;
   top: 15px; }
 
-#navbarCollapse a {
+#NavSuperior a {
   text-decoration: none;
   font-size: 16pt;
   transition: all 0.5s ease; }
 
-#navbarCollapse a:hover {
+#NavSuperior a:hover {
   text-decoration: none;
   color: #ffc107;
   font-size: 16pt; }
