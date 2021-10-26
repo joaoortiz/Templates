@@ -23,10 +23,12 @@
 <body>
 
     <section class="section-header">
-        <div class="DivLogo"><a class="" href=""><img src="img/logo.PNG" class="ImgLogo" alt=""></a></div>
+        
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="NavTopo"
             style="z-index:1; background-color: rgba(255,255,255,1);">
             <div class="container-fluid">
+
+                <a class="navbar-brand" href=""><img src="img/logo.PNG" class="ImgLogo" alt=""></a>
 
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                     data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
@@ -676,7 +678,7 @@
     <section class="section-feedback">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 py-5 px-5 bg-dark text-center">
+                <div class="col-12 py-5 px-5 text-center">
                     <h1 class="mt-4 text-gold">WHAT ARE SAYING ABOUT US</h1>
                     <h1 class="title-bordered-inverse">OUR CLIENTS FEEDBACK</h1>
                     <div class="carousel slide" data-ride="carousel" id="CarouselFeed">
@@ -964,22 +966,6 @@
 
     <script src="node_modules/intersection-observer/intersection-observer.js"></script>
     <script src="script/jquery.js"></script>
-
-
-    <script>
-        var divs = $('.DivLogo'),
-            limit = 1200;  /* scrolltop value when opacity should be 0 */
-
-        $(window).on('scroll', function () {
-            var st = $(this).scrollTop();
-
-            /* avoid unnecessary call to jQuery function */
-            if (st <= limit) {
-                divs.css({ 'opacity': (1 - st / limit) });
-            }
-        });
-    </script>
-
     <script src="script/popper.js"></script>
     <script src="script/bootstrap.js"></script>
 </body>

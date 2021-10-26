@@ -27,6 +27,25 @@ p {
     height: 100%;
 }
 
+.section-feedback{
+    background: url("../../img/bgBanner3.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-feedback::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #000000;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+
 .section-content-results {
     background: url("../../img/bgContent.jpg");
     background-size: cover;
@@ -396,6 +415,9 @@ p {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
 }
 
+.ImgLogo{
+    width:100px;
+}
 .count-number {
     color: #ffd700;
 }
@@ -563,10 +585,6 @@ p {
         width: 180px;
         height: auto;
     }
-
-    .ImgLogo{
-        width:150px;
-    }
 }
 
 #navbarCollapse{
@@ -575,9 +593,6 @@ p {
 
 @media (max-width: 992px) {
 
-    .ImgLogo{
-        width:100px;
-    }
     #DivYears {
         position: absolute;
         top: 360px;
@@ -589,9 +604,9 @@ p {
 
     .navbar-collapse{
         position:fixed;
-        top:0px;
+        top:110px;
         left:0px;
-        padding-top:140px;
+        padding-top:30px;
         padding-left:15px;
         padding-right:15px;
         padding-bottom:15px;
