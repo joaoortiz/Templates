@@ -13,7 +13,7 @@ p {
   background-size: cover;
   background-position-x: center;
   background-attachment: fixed;
-  height: 100vh; }
+  height: 110vh; }
 
 .section-header::before {
   content: "";
@@ -30,7 +30,7 @@ p {
   background-position-x: center;
   background-attachment: fixed;
   position: relative;
-  overflow: hidden; }
+  min-height: 85vh; }
 
 .section-feedback::before {
   content: "";
