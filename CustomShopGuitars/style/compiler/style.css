@@ -490,7 +490,8 @@ p {
     width: 180px;
     height: auto; } }
 #navbarCollapse {
-  background-color: white; }
+  background-color: white;
+  width: 100vw; }
 
 @media (max-width: 992px) {
   #DivYears {
