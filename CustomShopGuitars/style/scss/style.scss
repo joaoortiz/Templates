@@ -14,7 +14,7 @@ p {
     background-size: cover;
     background-position-x: center;
     background-attachment: fixed;
-    height: 110vh;
+    height: 100vh;
 }
 
 .section-header::before {
@@ -54,6 +54,7 @@ p {
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
     color: #ffffff;
+    transition:all 0.2s ease;
 }
 
 #DivServ {
@@ -270,7 +271,7 @@ p {
 }
 
 #DivBlues {
-    position:relative;
+    position: relative;
     background: url("../../img/imgBlues.jpg");
     background-size: cover;
     background-position-x: center;
@@ -278,12 +279,59 @@ p {
     min-height: 700px;
 }
 
+.DivLogo{
+    position:fixed;
+    z-index:10;
+    left:15px;
+    top:15px;
+}
+    
+
+
+#navbarCollapse a{
+    text-decoration:none;
+    font-size:16pt;
+    transition: all 0.5s ease;
+}
+
+#navbarCollapse a:hover{
+    text-decoration:none;
+    color:#ffc107;
+    font-size:16pt;
+}
+
+.DivClient {
+    position:relative;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin-left: 50%;
+    left:-80px;
+    border-radius:100px;
+    transition:all 0.5s ease;
+}
+
+.DivClient:hover{
+    box-shadow: 0 0 2em #ffffff;
+}
+
+.ImgClient {
+    border-radius: 0px;
+    transition: all 0.5s ease;
+    width:100%;
+}
+
+.ImgClient:hover {
+    transform: scale(1.2);
+    
+}
+
 #DivBlues::before {
-    left:0;    
+    left: 0;
     content: "";
     display: block;
     position: absolute;
-    background-color: rgba(0,0,0,0.4);    
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
 }
@@ -292,7 +340,7 @@ p {
     overflow: hidden;
     width: 160px;
     height: 160px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 #ImgMiniJD1:hover {
@@ -304,7 +352,7 @@ p {
 }
 
 #ImgJD {
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 
 #ImgJD:hover {
@@ -477,6 +525,11 @@ p {
     color: #333333;
 }
 
+#NavTopo{
+    border-bottom:10px solid #333333;
+    transition: all 0.5s ease-in;
+}
+
 @keyframes zoom {
     from {
         transform: scale(1, 1);
@@ -510,8 +563,21 @@ p {
         width: 180px;
         height: auto;
     }
+
+    .ImgLogo{
+        width:150px;
+    }
 }
+
+#navbarCollapse{
+    background-color:rgba(255,255,255,1);
+}
+
 @media (max-width: 992px) {
+
+    .ImgLogo{
+        width:100px;
+    }
     #DivYears {
         position: absolute;
         top: 360px;
@@ -519,5 +585,34 @@ p {
         left: 50%;
         width: 180px;
         height: 180px;
+    }
+
+    .navbar-collapse{
+        position:fixed;
+        top:0px;
+        left:0px;
+        padding-top:140px;
+        padding-left:15px;
+        padding-right:15px;
+        padding-bottom:15px;
+        height:100%;
+        width:70%;
+        background-color:rgba(255,255,255,1);
+    }
+
+    .navbar-collapse.collapsing{
+        height:100%;
+        left:-75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show{
+        height:100%;
+        left:0;
+        transition: left 0.4s ease-in-out;
+    }
+
+    .navbar.toggler.collapsed ~ .navbar-collapse{
+        transition: left 0.4s ease-in-out;
     }
 }

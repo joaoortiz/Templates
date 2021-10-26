@@ -23,13 +23,41 @@
 <body>
 
     <section class="section-header">
-        <nav class="navbar navbar-expand-lg" id="MenuTop">
-            <div class="navbar-brand">
-                Custom Shop Guitars
+        <div class="DivLogo"><a class="" href=""><img src="img/logo.PNG" class="ImgLogo" alt=""></a></div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="NavTopo"
+            style="z-index:1; background-color: rgba(255,255,255,1);">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-dark"></span>
+                </button>
+                <div class="collapse navbar-collapse px-3" style="z-index:2000;" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link mr-2" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-md-2" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-md-2" href="#">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ml-md-2" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2">
+                        <input class="form-control mr-2 ml-0 mx-lg-3 d-inline-block" type="text" placeholder="Search"
+                            style="width:200px;">
+                        <button class="btn btn-dark my-2 d-inline-block" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
 
-        <div class="carousel slide" data-ride="carousel" id="BannerRot">
+        <div class="carousel slide mt-5" data-ride="carousel" id="BannerRot">
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -60,7 +88,7 @@
         </div>
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-10 text-center pt-5 pb-0 DivDown" id="DivServ">
+                <div class="col-10 text-center pt-2 pb-0 DivDown" id="DivServ">
                     Guitar Repair | Instruments Tuning | Contruction Projects
                 </div>
             </div>
@@ -171,7 +199,7 @@
                     <div class="carousel slide" data-ride="carousel" id="CarouselStyle">
 
                         <ol class="carousel-indicators">
-                            <li class="active" data-slide-to="0"></li>
+                            <li class="active" data-target="#CarouselStyle" data-slide-to="0"></li>
                             <li class="" data-target="#CarouselStyle" data-slide-to="1"></li>
                             <li class="" data-target="#CarouselStyle" data-slide-to="2"></li>
                             <li class="" data-target="#CarouselStyle" data-slide-to="3"></li>
@@ -645,18 +673,80 @@
     </section>
 
 
-    <section class=" section-info">
+    <section class="section-feedback">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 py-5 bg-dark text-center">
-                    <h1 class="mt-4 text-gold">MAKE YOUR IDEA</h1>
-                    <h1 class="title-bordered-inverse">COME TRUE</h1>
-                    <h4 class="text-white">Lorem Ipsum Dolor</h2>
-                </div>
+                <div class="col-12 py-5 px-5 bg-dark text-center">
+                    <h1 class="mt-4 text-gold">WHAT ARE SAYING ABOUT US</h1>
+                    <h1 class="title-bordered-inverse">OUR CLIENTS FEEDBACK</h1>
+                    <div class="carousel slide" data-ride="carousel" id="CarouselFeed">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-target="#CarouselFeed" data-slide-to="0"></li>
+                            <li data-target="#CarouselFeed" data-slide-to="1"></li>
+                            <li data-target="#CarouselFeed" data-slide-to="2"></li>
+                        </ol>
 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active text-center">
+                                <div class="DivClient mt-5 mb-4">
+                                    <img src="img/imgTeam1.png" alt="" class="ImgClient">
+                                </div>
+                                <h4 class="text-center text-white">Trevor Phillips</h6>
+                                    <p class="text-white mb-5" style="line-height: 30px;padding:0.5vh 5vw 0.8vh;">"Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing
+                                        elit.
+                                        Integer id lacus suscipit, maximus leo in, aliquam tellus. Nulla sed
+                                        ullamcorper felis, vestibulum elementum risus. Aliquam non sapien ante.
+                                        Suspendisse ex magna, pretium et aliquam sit amet, congue non neque.
+                                        Donec vel leo nec tortor finibus aliquam. "
+                                    </p>
+
+                            </div>
+
+                            <div class="carousel-item text-center">
+                                <div class="DivClient mt-5 mb-4">
+                                    <img src="img/imgTeam2.png" alt="" class="ImgClient">
+                                </div>
+                                <h4 class="text-center text-white">Jane Doe</h6>
+                                    <p class="text-white mb-5"
+                                        style="font-size:1.1rem; line-height: 30px;padding:0.5vh 5vw 0.8vh;">"Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing
+                                        elit.
+                                        Integer id lacus suscipit, maximus leo in, aliquam tellus. Nulla sed
+                                        ullamcorper felis, vestibulum elementum risus. Aliquam non sapien ante.
+                                        Suspendisse ex magna, pretium et aliquam sit amet, congue non neque.
+                                        Donec vel leo nec tortor finibus aliquam. "
+                                    </p>
+
+                            </div>
+
+                            <div class="carousel-item text-center">
+                                <div class="DivClient mt-5 mb-4">
+                                    <img src="img/imgTeam3.png" alt="" class="ImgClient">
+                                </div>
+                                <h4 class="text-center text-white">Michael Stilles</h6>
+                                    <p class="text-white mb-5" style="line-height: 30px;padding:0.5vh 5vw 0.8vh;">"Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing
+                                        elit.
+                                        Integer id lacus suscipit, maximus leo in, aliquam tellus. Nulla sed
+                                        ullamcorper felis, vestibulum elementum risus. Aliquam non sapien ante.
+                                        Suspendisse ex magna, pretium et aliquam sit amet, congue non neque.
+                                        Donec vel leo nec tortor finibus aliquam. "
+                                    </p>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
+
     </section>
+
+
 
     <section class="section-form">
         <div class="container-fluid bg-gold">
@@ -686,7 +776,7 @@
 
                 <div class="col-12 col-md-6 py-5 DivFade text-center">
                     <h1 class="mt-4 text-dark title-big">TELL US MORE</h1>
-                    <h1 class="title-bordered">YOUR PROJECT</h1>
+                    <h1 class="title-bordered">ABOUT YOUR PROJECT</h1>
                     <div class="form-row justify-content-center">
                         <div class="col-9 form-group">
                             <input type="text" class="form-control CaixaTexto" placeholder="Your Name">
@@ -734,6 +824,7 @@
 
 
     <!-- Optional JavaScript -->
+
     <script>
         const counters = document.querySelectorAll('.value');
         const speed = 5000;
@@ -873,6 +964,22 @@
 
     <script src="node_modules/intersection-observer/intersection-observer.js"></script>
     <script src="script/jquery.js"></script>
+
+
+    <script>
+        var divs = $('.DivLogo'),
+            limit = 1200;  /* scrolltop value when opacity should be 0 */
+
+        $(window).on('scroll', function () {
+            var st = $(this).scrollTop();
+
+            /* avoid unnecessary call to jQuery function */
+            if (st <= limit) {
+                divs.css({ 'opacity': (1 - st / limit) });
+            }
+        });
+    </script>
+
     <script src="script/popper.js"></script>
     <script src="script/bootstrap.js"></script>
 </body>
