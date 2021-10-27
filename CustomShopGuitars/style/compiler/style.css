@@ -93,6 +93,14 @@ p {
   text-shadow: black 2px 2px;
   color: #ffffff; }
 
+.LinkFooter {
+  color: #333333;
+  transition: all 0.3s ease; }
+
+.LinkFooter:hover {
+  text-decoration: none;
+  color: #ffc107; }
+
 #DivOwner {
   overflow: hidden; }
 
@@ -129,6 +137,12 @@ p {
 #ImgOwner:hover {
   filter: blur(0);
   transform: scale(1.03); }
+
+#ImgMiniOwner {
+  transition: all 0.3s ease-in; }
+
+#ImgMiniOwner:hover {
+  transform: scale(1.15); }
 
 #DivYears {
   border: #ffffff 14px solid; }
@@ -248,6 +262,9 @@ p {
 
 .section-cards {
   height: auto; }
+
+.ImgPartner {
+  width: 50%; }
 
 #cartao1 {
   background-image: url("../../img/imgcard1.jpg"); }
@@ -504,7 +521,7 @@ p {
   transform: scale(1); }
 
 .DivFade {
-  transition: opacity 2s ease;
+  transition: opacity 1.2s ease;
   transition-delay: 0.5s;
   opacity: 0; }
 
