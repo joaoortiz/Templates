@@ -288,6 +288,126 @@ p {
     overflow: hidden;
     min-height: 850px;
 }
+.section-cards{
+    height:auto;
+}
+
+#cartao1{
+    background-image: url('../../img/imgcard1.jpg');
+}
+
+#cartao2{
+    background-image: url('../../img/imgcard2.png');
+}
+
+#cartao3{
+    background-image: url('../../img/imgcard3.jpg');
+}
+
+#cartao4{
+    background-image: url('../../img/imgcard4.jpg');
+}
+
+#cartao5{
+    background-image: url('../../img/imgcard5.jpg');
+}
+
+#cartao6{
+    background-image: url('../../img/imgcard6.jpg');
+}
+
+#cartao7{
+    background-image: url('../../img/imgcard7.jpg');
+}
+
+#cartao8{
+    background-image: url('../../img/imgcard8.jpg');
+}
+
+.cartao{
+    background-size: cover;
+    transition: transform 0.5s ease;
+    padding:10rem 0 0;
+    max-width:420px;
+    max-height:460px;
+    color:white;
+    font-family: 'Calibri';
+    display:inline-block;
+    overflow:hidden;
+    border:10px solid #ffffff;
+  }
+
+  .cartao:hover > :not(.cartao-conteudo){   
+    transform: scale(1.05);
+  }
+
+  .cartao-conteudo{    
+    padding: 1rem 1.5rem 1.5rem 0.8rem;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,1));
+    transform: translateY(65%);
+    transition: transform 0.5s ease;
+    transition-delay: 0.5s;
+  }
+
+.cartao-conteudo > .cartao-texto{
+    padding-top: 5px;
+  opacity:0;
+  transition: opacity 1s ease;
+  transition-delay: 0.5s;
+}
+
+.cartao:hover .cartao-texto{
+  opacity:1;  
+}
+
+.cartao:hover .cartao-conteudo{
+    transform: translateY(0%);
+    transition-delay: 0.5s;   
+    
+  }
+
+  .cartao-titulo{
+    position:relative;    
+    width:max-content;
+  }
+
+  .cartao-titulo::after{
+    content: "";
+    position:absolute;
+    height:3px;
+    left:-15px;
+    bottom:-8px;
+    width:150%;
+    background-color: #ffc107;
+    transform-origin:left;
+    transition: transform 0.5s ease;
+    transform: scale(0);
+  }
+
+  .cartao:hover .cartao-titulo::after{
+    transform: scale(1);
+  }
+
+  .botao-link{
+    cursor:pointer;
+    font-weight: bold;
+    text-decoration:none;
+    display:inline;
+    color:#333333;
+    background-color:#ffc107;
+    padding:5px 10px 5px 10px;
+  }
+  
+  .botao-link:hover,.botao-link:focus{
+      text-decoration: none;
+    background-color:#333333;
+    color:#ffffff;
+  }
+
+  .cartao-borda{
+    display: inline-block;
+    overflow: hidden;    
+  }
 
 #DivBlues {
     position: relative;
