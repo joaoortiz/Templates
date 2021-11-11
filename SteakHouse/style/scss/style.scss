@@ -84,6 +84,12 @@ html {
 .section-header .nav-link {
     color: #cd853f !important;
 }
+.section-credits {
+    background-color: #cd853f;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size:16px;
+}
 
 .section-header .nav-link:hover {
     color: #666666 !important;
@@ -263,6 +269,57 @@ h2 {
 
 .div-grow-border {
     overflow: hidden;
+}
+
+.cardabout{
+    position:relative;
+    margin:5vh auto;
+    overflow:hidden;
+    background-image:url('../../img/about1.jpg');
+    background-size:cover;
+    width:450px;
+    height:250px;
+    transition:all 0.5s ease;
+}
+
+.cardabout:hover{
+    background-image:url('../../img/about2.jpg');
+   box-shadow: 0 0 1em #cd853f;
+}
+
+.cardabout .cardabout-desc-top{
+    position:absolute;
+    right:0;
+    top:25px;
+    font-family:'Bebas Neue', cursive;
+    font-size:22px;
+    color:#ffffff;
+    background-color: #cd853f;
+    padding: 0.5em 1em;
+    transition:transform 0.5s ease 0.3s;
+    transform:translateX(100%);
+    border:0px solid #ffffff;
+    }
+
+    .cardabout:hover .cardabout-desc-top{
+        transform:translateX(0%);
+    }
+
+.cardabout .cardabout-desc-bottom{
+    position:absolute;
+    left:0;
+    bottom:25px;
+    font-family:'Bebas Neue', cursive;
+    font-size:22px;
+    color:#ffffff;
+    background-color: #666666;
+    padding: 0.5em 1em;
+    transition:transform 0.5s ease;
+    border:0px solid #ffffff;
+}
+
+.cardabout:hover .cardabout-desc-bottom{
+    transform:translateX(-100%);
 }
 
 .cardcity {
@@ -774,18 +831,50 @@ h2 {
     transform: translateX(0%);
 }
 
+.social-footer{
+    color: #666666;
+}
+
+#CarouselFooter>h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color:#666666;
+}
+
+#CarouselFooter p{
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    font-weight:700;
+    
+}
+
+.img-footer{
+    width:80px;
+    height:80px;
+    filter:grayscale(100%);
+}
+
 .ListFooter {
     list-style-type: none;
 }
 
 .ListFooter i {
     color: #cd853f;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.ListFooter p{
+    line-height:5px;
+    font-size:14px;
 }
 
 .LinkFooter {
     text-decoration: none;
-    font-family: "Bebas Neue", cursive;
-    font-size: 24px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
     color: #666666;
 }
 
