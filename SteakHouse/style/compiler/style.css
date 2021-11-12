@@ -8,6 +8,16 @@ html {
 .separator {
   border-bottom: 5px solid #cccccc; }
 
+#DivCollapse {
+  opacity: 1;
+  transition: all 0.5s ease-in; }
+
+#ButtonCollapse {
+  transition: all 0.5s ease-in; }
+
+#Logo {
+  transition: all 0.5s ease; }
+
 .icofont:hover {
   color: #999999; }
 
@@ -191,7 +201,7 @@ h2 {
   background-position-y: -40px;
   background-size: cover;
   width: 550px;
-  height: 400px;
+  height: 500px;
   transition: all 0.7s ease; }
 
 #DivImgAbout:hover {
@@ -236,12 +246,12 @@ h2 {
 
 .cardabout {
   position: relative;
-  margin: 5vh auto;
+  margin: auto;
   overflow: hidden;
   background-image: url("../../img/about1.jpg");
   background-size: cover;
   width: 450px;
-  height: 250px;
+  height: 350px;
   transition: all 0.5s ease; }
 
 .cardabout:hover {
