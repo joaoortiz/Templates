@@ -1,0 +1,99 @@
+.container-fluid {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.carousel-control-prev, .carousel-control-next {
+  margin: auto 20px;
+  width: clamp(40px, 5vw, 75px);
+  height: clamp(40px, 5vw, 75px);
+  background: dodgerblue;
+  border-radius: 100%; }
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  padding: 7em 15%;
+  align-content: center;
+  height: 400px;
+  background-size: cover;
+  background-position-x: center; }
+
+.banner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.banner-title {
+  position: relative;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 7vw; }
+
+.banner-text {
+  position: relative;
+  color: #ffffff;
+  font-size: clamp(16px, 1.3vw, 22px); }
+
+#Banner1 {
+  background-image: url("../../../img/bg1.jpg"); }
+
+#Banner2 {
+  background-image: url("../../../img/bg2.jpg"); }
+
+#Banner3 {
+  background-image: url("../../../img/bg3.jpg"); }
+
+.cardfeat {
+  position: relative;
+  border: 1px solid dodgerblue;
+  overflow: hidden;
+  margin: auto;
+  max-width: 450px;
+  padding: 4em 1.5em;
+  color: #000000; }
+
+.cardfeat:hover {
+  color: #ffffff; }
+
+.cardfeat-icon {
+  position: relative;
+  display: grid;
+  margin-left: -50px;
+  left: 50%;
+  border-radius: 100%;
+  align-items: center;
+  background-color: dodgerblue;
+  color: #ffffff;
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s ease; }
+
+.cardfeat:hover .cardfeat-icon {
+  background-color: #ffffff;
+  color: dodgerblue; }
+
+.cardfeat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: dodgerblue;
+  transform: translateY(100%);
+  transition: transform 0.5s ease; }
+
+.cardfeat-content {
+  position: relative; }
+
+.cardfeat:hover::before {
+  transform: translateY(30%); }
+
+#CardFeat1 {
+  background-color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
