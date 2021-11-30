@@ -2,7 +2,8 @@
   padding-left: 10%;
   padding-right: 10%; }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   margin: auto 20px;
   width: clamp(40px, 5vw, 75px);
   height: clamp(40px, 5vw, 75px);
@@ -19,7 +20,7 @@
   background-position-x: center; }
 
 .banner::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -53,7 +54,7 @@
   overflow: hidden;
   margin: auto;
   max-width: 450px;
-  padding: 4em 1.5em;
+  padding: 2rem 1.5em;
   color: #000000; }
 
 .cardfeat:hover {
@@ -77,7 +78,7 @@
   color: dodgerblue; }
 
 .cardfeat::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -95,5 +96,254 @@
 
 #CardFeat1 {
   background-color: #ffffff; }
+
+.cardcourse {
+  position: relative;
+  background-size: cover;
+  background-position-x: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 10rem 0 0;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  transition: all 0.5s ease;
+  align-items: center; }
+
+.cardcourse:hover {
+  transition: all 0.5s ease;
+  box-shadow: 0 0 0.5em #cccccc; }
+
+.cardcourse::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(30, 144, 255, 0.7);
+  transform: translateY(-100%);
+  transition: transform 0.5s ease; }
+
+.cardcourse-button {
+  width: 200px;
+  font-size: 1.2rem;
+  height: 40px;
+  top: 18px;
+  right: 18px;
+  transform: scale(0);
+  position: absolute;
+  padding: 0.3rem;
+  background-color: #ffffff;
+  color: dodgerblue;
+  font-weight: bold;
+  z-index: 2;
+  transition: all 0.5s ease 0.3s; }
+
+.cardcourse:hover .cardcourse-button {
+  text-decoration: none;
+  transform: scale(1);
+  color: dodgerblue; }
+
+.cardcourse:hover::before {
+  transform: translateY(0%); }
+
+#Course1 {
+  background-image: url("../../../img/c1.jpg"); }
+
+#Course2 {
+  background-image: url("../../../img/c2.jpg"); }
+
+#Course3 {
+  background-image: url("../../../img/c3.jpg"); }
+
+#Course4 {
+  background-image: url("../../../img/c4.jpg"); }
+
+#Course5 {
+  background-image: url("../../../img/c5.jpg"); }
+
+.cardcourse-content {
+  padding: 0.8rem 1rem;
+  background-color: dodgerblue;
+  transform: translateY(82%);
+  transition: all 0.5s ease; }
+
+.cardcourse:hover .cardcourse-content {
+  transform: translateY(0%);
+  background-color: #ffffff; }
+
+.cardcourse-title {
+  color: #ffffff;
+  transition: all 0.8s ease; }
+
+.cardcourse:hover .cardcourse-title {
+  color: #000000; }
+
+.cardplan {
+  position: relative;
+  margin: auto;
+  border: 1px solid #cccccc;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  transition: all 0.5s ease;
+  overflow: hidden; }
+
+.cardplan::before {
+  position: absolute;
+  top: 0;
+  left: -90%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(30, 144, 255, 0) 0%, rgba(30, 144, 255, 0.3) 100%);
+  background: linear-gradient(to right, rgba(30, 144, 255, 0) 0%, rgba(30, 144, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg); }
+
+.cardplan:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s; }
+
+.cardplan i {
+  color: dodgerblue; }
+
+.cardplan:hover i {
+  transform: rotate(180deg); }
+
+.cardplan:hover {
+  box-shadow: 0 0 0.5em dodgerblue;
+  transform: translateY(-5%);
+  background-color: rgba(30, 144, 255, 0.2);
+  border: 1px solid dodgerblue; }
+
+.cardplan p {
+  font-size: 1rem; }
+
+.cardplan ul {
+  list-style-type: none;
+  padding: 0; }
+
+.cardplan li {
+  color: #000000;
+  font-size: 1rem;
+  line-height: 2rem; }
+
+.cardteacher {
+  position: relative;
+  margin: auto;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 280px;
+  overflow: hidden;
+  height: 350px;
+  align-items: center;
+  transition: all 0.5s ease;
+  padding: 0;
+  border: 1px solid #cccccc; }
+
+.cardteacher-image {
+  z-index: 1;
+  background-size: cover;
+  margin: auto;
+  height: 289px;
+  width: 100%;
+  transition: transform 0.5s ease; }
+
+.cardteacher-icon {
+  border-radius: 100%;
+  position: absolute;
+  background-color: rgba(30, 144, 255, 0.8);
+  color: #ffffff;
+  padding: 0.4em 0.3rem;
+  width: 55px;
+  height: 55px;
+  top: 45%;
+  margin-left: -25px;
+  left: 50%;
+  transform: scale(0);
+  transform-origin: center;
+  cursor: pointer;
+  transition: all 0.2s ease; }
+
+.cardteacher-icon:hover {
+  background-color: white;
+  color: dodgerblue; }
+
+.cardteacher:hover #SocialIcon1 {
+  transform: translateY(-90%); }
+
+.cardteacher:hover #SocialIcon3 {
+  transform: translateY(90%); }
+
+.cardteacher:hover #SocialIcon2 {
+  transform: translateX(-90%); }
+
+.cardteacher:hover #SocialIcon4 {
+  transform: translateX(90%); }
+
+#SocialIcon1 {
+  transform: translateY(-420%);
+  transition: all 0.5s ease; }
+
+#SocialIcon2 {
+  transform: translateX(-320%);
+  transition: all 0.5s ease; }
+
+#SocialIcon3 {
+  transform: translateY(420%);
+  transition: all 0.5s ease; }
+
+#SocialIcon4 {
+  transform: translateX(320%);
+  transition: all 0.5s ease; }
+
+#Teacher1 {
+  background-image: url("../../../img/tc1.png"); }
+
+#Teacher2 {
+  background-image: url("../../../img/tc2.png"); }
+
+#Teacher3 {
+  background-image: url("../../../img/tc3.png"); }
+
+#Teacher4 {
+  background-image: url("../../../img/tc4.png"); }
+
+#Teacher5 {
+  background-image: url("../../../img/tc41.jpg"); }
+
+#Teacher6 {
+  background-image: url("../../../img/tc42.png"); }
+
+.cardteacher-content {
+  position: absolute;
+  background-color: #ffffFF;
+  width: 100%;
+  height: 60px;
+  padding: .3rem;
+  bottom: 0;
+  vertical-align: middle;
+  transition: transform 0.5s ease;
+  z-index: 2;
+  transition: all 0.5s ease; }
+
+.cardteacher:hover .cardteacher-content {
+  background-color: dodgerblue; }
+
+.cardteacher-name {
+  color: dodgerblue;
+  font-size: 1.2rem; }
+
+.cardteacher:hover .cardteacher-name {
+  color: #ffffff; }
+
+.cardteacher-title {
+  line-height: 5px; }
+
+@keyframes shine {
+  100% {
+    left: 125%; } }
 
 /*# sourceMappingURL=style.css.map */
