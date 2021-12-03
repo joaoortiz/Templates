@@ -42,13 +42,13 @@ p {
 
 /**************NAVBAR*****************/
 #NavMenu {
-  background-color: red;
+  background-color: #fffaf0;
   padding: 1rem; }
 
 #SectionHeader .nav-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ee3b3b;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Open Sans", sans-serif; }
 
 .navbar-toggler-icon {
