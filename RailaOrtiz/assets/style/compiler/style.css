@@ -162,7 +162,7 @@ p {
 #SectionFeatures {
   position: relative;
   height: 400px;
-  background-image: url("../../../img/bgfeat.jpg");
+  background-image: url("../../../img/bgFeat.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center; }
