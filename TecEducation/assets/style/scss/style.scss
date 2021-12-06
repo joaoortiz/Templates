@@ -2,7 +2,6 @@ html {
     font-size: 16px;
 }
 
-
 .container-fluid {
     padding-left: 10%;
     padding-right: 10%;
@@ -71,9 +70,9 @@ html {
 }
 
 .data-title {
-    text-align:center;
-    color:#FFFFFF;
-    padding:1rem 1rem 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem 1rem 0.5rem;
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -227,15 +226,14 @@ html {
     color: #000000;
 }
 
-
-.cardplan{
-    position:relative;
-    margin:auto;
-    border:1px solid #cccccc;
-    padding:1.5rem 1rem;
-    width:100%;
+.cardplan {
+    position: relative;
+    margin: auto;
+    border: 1px solid #cccccc;
+    padding: 1.5rem 1rem;
+    width: 100%;
     transition: all 0.5s ease;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .cardplan::before {
@@ -258,118 +256,114 @@ html {
     animation: shine 0.75s;
 }
 
-.cardplan i{
-    color:dodgerblue;
+.cardplan i {
+    color: dodgerblue;
 }
 
-.cardplan:hover i{
+.cardplan:hover i {
     transform: rotate(180deg);
 }
 
-.cardplan:hover{
-    box-shadow:0 0 0.5em dodgerblue;
-    transform:translateY(-5%);
-    background-color:rgba(30, 144, 255, 0.2);
-    border:1px solid dodgerblue;
-    
+.cardplan:hover {
+    box-shadow: 0 0 0.5em dodgerblue;
+    transform: translateY(-5%);
+    background-color: rgba(30, 144, 255, 0.2);
+    border: 1px solid dodgerblue;
 }
 
-.cardplan p{
-    font-size:1rem;
+.cardplan p {
+    font-size: 1rem;
 }
 
-.cardplan ul{
+.cardplan ul {
     list-style-type: none;
-    padding:0;  
+    padding: 0;
 }
 
-.cardplan li{
-    color:#000000;
-    font-size:1rem;
+.cardplan li {
+    color: #000000;
+    font-size: 1rem;
     line-height: 2rem;
 }
 
 .cardteacher {
     position: relative;
     margin: auto;
-    padding:0.5rem;
+    padding: 0.5rem;
     width: 100%;
     max-width: 280px;
-    overflow:hidden;
+    overflow: hidden;
     height: 350px;
     align-items: center;
     transition: all 0.5s ease;
     padding: 0;
-    border:1px solid #cccccc;
+    border: 1px solid #cccccc;
 }
 
-
-.cardteacher-image {    
-    z-index:1;
+.cardteacher-image {
+    z-index: 1;
     background-size: cover;
-    margin:auto;
+    margin: auto;
     height: 289px;
     width: 100%;
     transition: transform 0.5s ease;
-    }
+}
 
-.cardteacher-icon{
-    border-radius:100%;
-    position:absolute;
+.cardteacher-icon {
+    border-radius: 100%;
+    position: absolute;
     background-color: rgba(30, 144, 255, 0.8);
-    color:#ffffff;
-    padding:0.4em 0.3rem;
-    width:55px;
-    height:55px;
-    top:45%;
-    margin-left:-25px;
-    left:50%;
-    transform:scale(0);
+    color: #ffffff;
+    padding: 0.4em 0.3rem;
+    width: 55px;
+    height: 55px;
+    top: 45%;
+    margin-left: -25px;
+    left: 50%;
+    transform: scale(0);
     transform-origin: center;
     cursor: pointer;
-    transition: all 0.2s ease; 
+    transition: all 0.2s ease;
 }
 
- .cardteacher-icon:hover{
-    background-color: rgba(255,255,255,1);
-    color:dodgerblue;
-    
- }
-
-.cardteacher:hover #SocialIcon1{    
-    transform: translateY(-90%);    
+.cardteacher-icon:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: dodgerblue;
 }
 
-.cardteacher:hover #SocialIcon3{    
-    transform: translateY(90%);    
-}
-.cardteacher:hover #SocialIcon2{    
-    transform: translateX(-90%);    
+.cardteacher:hover #SocialIcon1 {
+    transform: translateY(-90%);
 }
 
-.cardteacher:hover #SocialIcon4{    
-    transform: translateX(90%);    
+.cardteacher:hover #SocialIcon3 {
+    transform: translateY(90%);
+}
+.cardteacher:hover #SocialIcon2 {
+    transform: translateX(-90%);
 }
 
-#SocialIcon1{
-    transform:translateY(-420%);
-    transition: all 0.5s ease;    
+.cardteacher:hover #SocialIcon4 {
+    transform: translateX(90%);
 }
 
-#SocialIcon2{
-    transform:translateX(-320%);
-    transition:all 0.5s ease;
-}
-#SocialIcon3{
-    transform:translateY(420%);
+#SocialIcon1 {
+    transform: translateY(-420%);
     transition: all 0.5s ease;
 }
 
-#SocialIcon4{
-    transform:translateX(320%);
-    transition:all 0.5s ease;
+#SocialIcon2 {
+    transform: translateX(-320%);
+    transition: all 0.5s ease;
+}
+#SocialIcon3 {
+    transform: translateY(420%);
+    transition: all 0.5s ease;
 }
 
+#SocialIcon4 {
+    transform: translateX(320%);
+    transition: all 0.5s ease;
+}
 
 #Teacher1 {
     background-image: url("../../../img/tc1.png");
@@ -391,33 +385,91 @@ html {
 }
 
 .cardteacher-content {
-    position:absolute;
-    background-color: #ffffFF;
+    position: absolute;
+    background-color: #ffffff;
     width: 100%;
-    height:60px;
-    padding:.3rem;
-    bottom:0;
+    height: 60px;
+    padding: 0.3rem;
+    bottom: 0;
     vertical-align: middle;
     transition: transform 0.5s ease;
-    z-index:2;
-    transition:all 0.5s ease;
+    z-index: 2;
+    transition: all 0.5s ease;
 }
 
 .cardteacher:hover .cardteacher-content {
-    background-color:rgba(30, 144, 255, 1);
-    
+    background-color: rgba(30, 144, 255, 1);
 }
 
-.cardteacher-name{
-    color:dodgerblue;
-    font-size:1.2rem;
+.cardteacher-name {
+    color: dodgerblue;
+    font-size: 1.2rem;
 }
 
-.cardteacher:hover .cardteacher-name{
-    color:#ffffff;
+.cardteacher:hover .cardteacher-name {
+    color: #ffffff;
 }
-.cardteacher-title{
-    line-height:5px;
+.cardteacher-title {
+    line-height: 5px;
+}
+
+.cardblog {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid #cccccc;
+    min-height: 550px;
+    transition: all 0.3s ease;
+}
+
+.cardblog-image{
+    overflow:hidden;
+}
+
+.cardblog-image img{
+    transition: transform 0.5s ease;
+}
+
+.cardblog:hover .cardblog-image img{
+    transform: scale(1.1);
+}
+
+.cardblog:hover {
+    box-shadow: 0 0 1.5rem dodgerblue;
+}
+
+.cardblog-date {
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    padding: 0.5rem 1rem;
+    background-color: dodgerblue;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cardblog-content {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+
+.cardblog-footer{
+    position:relative;
+    display:grid;
+    background-color:#ccc;
+    height:85px;
+    padding:0.5rem;
+}
+
+
+.cardblog-author{
+    width:50px;
+    height:50px;
 }
 
 @keyframes shine {
