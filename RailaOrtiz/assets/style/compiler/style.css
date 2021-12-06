@@ -15,20 +15,12 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #333333; }
 
-h3 {
+.title {
   font-family: "Cinzel Decorative", cursive;
   color: #ee3b3b;
   font-size: 1.8rem;
   font-weight: 700;
   padding: 0 1rem 1rem; }
-
-h3::after {
-  content: "";
-  position: absolute;
-  border-top: 2px solid #666666;
-  width: 60%;
-  top: 3.5rem;
-  left: 1.8rem; }
 
 h4 {
   font-family: "Cinzel Decorative", cursive;
@@ -189,7 +181,7 @@ p {
   box-shadow: 0 0 1.5rem #ffffff; }
 
 .cardfeature::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: 0px;
@@ -247,5 +239,36 @@ p {
 
 .cardfeature:hover .cardfeature-verse {
   transform: translateY(0); }
+
+#SectionCards {
+  position: relative;
+  top: -150px; }
+
+/************Dados******************/
+.circle-box div {
+  padding: 0 1rem; }
+
+.progressbar-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold !important;
+  font-size: 2rem;
+  color: #333333; }
+
+.data-title {
+  text-align: center;
+  padding: 1.5rem;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 700;
+  font-size: 1.2rem; }
+
+#SectionData {
+  position: relative;
+  top: -150px; }
+
+/***************Backgrounds******************/
+#SectionBG1 {
+  position: relative;
+  top: -150px;
+  height: 500px; }
 
 /*# sourceMappingURL=style.css.map */
