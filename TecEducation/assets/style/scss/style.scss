@@ -286,6 +286,35 @@ html {
     line-height: 2rem;
 }
 
+.buttongallery{
+    color:#000000;
+    background-color:#ffffff;
+    border: 1px solid dodgerblue;
+    padding:0.5rem 2.5rem;
+    margin:0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.buttongallery:hover, .buttongallery.active{
+    color:#ffffff;
+    background-color:dodgerblue;
+    
+}
+
+.gallerybox{
+    padding:1rem;
+}
+
+.imggallery{
+    width:250px;
+    height:250px;
+    transition: all 0.3s ease;
+}
+
+.imggallery:hover{
+    box-shadow: 0 0 1.5rem dodgerblue;
+}
+
 .cardteacher {
     position: relative;
     margin: auto;
