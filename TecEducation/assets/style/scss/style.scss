@@ -361,7 +361,6 @@ html {
 
 .cardteacher {
     position: relative;
-    background-position-x:center ;
     margin: auto;
     padding: 0.5rem;
     width: 100%;
@@ -377,6 +376,7 @@ html {
 .cardteacher-image {
     z-index: 1;
     background-size: cover;
+    background-position-x:center ;
     margin: auto;
     height: 289px;
     width: 100%;
