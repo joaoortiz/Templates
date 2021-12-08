@@ -313,6 +313,7 @@ html {
 
 .cardteacher {
   position: relative;
+  background-position-x: center;
   margin: auto;
   padding: 0.5rem;
   width: 100%;
