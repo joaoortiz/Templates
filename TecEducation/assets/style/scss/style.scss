@@ -227,47 +227,45 @@ html {
     color: #000000;
 }
 
-#SectionPlans{
-    position:relative;
-    background-image: url('../../../img/bg6.jpg');
-    background-size:cover;
+#SectionPlans {
+    position: relative;
+    background-image: url("../../../img/bg6.jpg");
+    background-size: cover;
     background-attachment: fixed;
 }
 
-
-#SectionPlans::before{
-    content:'';
-    position:absolute;
-    top:0px;
-    left:0px;
-    background-color:rgba(255,255,255,0.6);
-    width:100%;
-    height:100%;
-    z-index:0;
+#SectionPlans::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
-#SectionFinal{
-    position:relative;
-    background-image: url('../../../img/bg5.jpg');
-    background-size:cover;
+#SectionFinal {
+    position: relative;
+    background-image: url("../../../img/bg5.jpg");
+    background-size: cover;
     background-attachment: fixed;
-    height:600px;
+    height: 600px;
 }
 
-
-#SectionFinal::before{
-    content:'';
-    position:absolute;
-    top:0px;
-    left:0px;
-    background-color:rgba(255,255,255,0.2);
-    width:100%;
-    height:100%;
-    z-index:0;
+#SectionFinal::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
-.TopoDiv{
-    position:relative;
+.TopoDiv {
+    position: relative;
     z-index: 1;
 }
 
@@ -275,7 +273,7 @@ html {
     position: relative;
     margin: auto;
     border: 1px solid #cccccc;
-    background-color:rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     padding: 1.5rem 1rem;
     width: 100%;
     transition: all 0.5s ease;
@@ -492,12 +490,23 @@ html {
 .cardreview {
     position: relative;
     margin: 2rem auto;
-    width: 70%;
+    width: 80%;
+    min-width:300px;
     height: 400px;
     padding: 12rem 0.55rem;
     overflow: hidden;
-    border: 1px solid #cccccc;
+    border: 1px solid #999999;
     transition: all 0.3s ease;
+}
+
+#CarouselReview .carousel-indicators li{
+    position:relative;
+    top:30px;
+    background-color:#cccccc;
+}
+
+#CarouselReview .carousel-indicators li.active{
+    background-color:dodgerblue;
 }
 
 .cardreview:hover {
@@ -511,17 +520,19 @@ html {
     width: 100%;
     height: 10rem;
     transition: all 0.3s ease;
-    transform: translateY(-100%);
-    background-color: rgba(30, 144, 255, 1);
+    transform: translateY(0%);
+    background-color: rgba(30, 144, 255, 0.5);
     padding: 0.5rem 1rem;
     text-align: right;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1.2vw,1rem);
     font-weight: bold;
-    color: #ffffff;
+    color: #333333;
 }
 
 .cardreview:hover .cardreview-data {
     transform: translateY(0%);
+    background-color: rgba(30, 144, 255, 0.8);
+    color:#ffffff;
 }
 
 .cardreview-data div {
@@ -535,12 +546,10 @@ html {
 .cardreview-image {
     position: absolute;
     overflow: hidden;
-    border: 10px solid #ffffff;
-    border-radius: 100%;
+    border: 5px solid #ffffff;
     width: 170px;
     height: 170px;
-    margin-left: -85px;
-    left: 50%;
+    left: 5%;
     top: 15px;
     transition: all 0.3s ease;
 }
@@ -548,8 +557,8 @@ html {
 .cardreview img {
     filter: grayscale(100%);
     transition: all 0.3s ease;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
 }
 
 .cardreview:hover .cardreview-image img {
@@ -560,8 +569,8 @@ html {
 .cardreview-content {
     position: relative;
     text-align: justify;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    font-size: clamp(0.9rem,2vw,1.5rem);
+    padding: 0rem 1rem;
     color: #999999;
     transition: all 0.3s ease;
 }
@@ -620,4 +629,30 @@ html {
     100% {
         left: 125%;
     }
+}
+
+/**************************media********************/
+@media(max-width:720px){
+
+    .cardreview-image {
+        position: absolute;
+        overflow: hidden;
+        border: 5px solid #ffffff;
+        width: 120px;
+        height: 120px;
+        left: 5%;
+        top: 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .cardreview img {
+        transition: all 0.3s ease;
+        width: 120px;
+        height: 120px;
+    }
+
+    .cardreview-data{
+        transform:translateY(0%);
+    }
+    
 }
