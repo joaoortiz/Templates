@@ -275,14 +275,14 @@ p {
 #SectionProducts {
   position: relative;
   top: -150px;
-  padding: 0 5rem; }
+  padding: 0 2rem; }
 
 .cardprod {
   background-color: #ffffff;
   position: relative;
   margin: auto;
   width: 100%;
-  max-width: 280px;
+  max-width: 350px;
   height: 460px;
   border: 1px solid #cccccc;
   overflow: hidden;
@@ -396,15 +396,16 @@ p {
 
 .cardprod-title {
   margin: 0rem 0rem 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ee3b3b;
   text-align: justify;
-  font-weight: bold; }
+  font-weight: 700;
+  font-family: "Cinzel Decorative", cursive; }
 
 .cardprod-price {
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 0.2rem;
   font-size: 1.2rem; }
 
 .cardprod-button {
